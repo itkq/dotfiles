@@ -29,6 +29,8 @@ in systemFunc rec {
     # the overlays are available globally.
     # { nixpkgs.overlays = overlays; }
 
+    { nixpkgs.config.allowUnfree = true; }
+
     machineConfig
     (import userOSConfig {
       user = user;

@@ -8,8 +8,13 @@
     casks  = [
       "arc"
       "google-japanese-ime"
+      "meetingbar"
+      "logseq"
       "karabiner-elements"
+      "keybase"
       "raycast"
+      "scroll-reverser"
+      "spotify"
     ];
     masApps = {};
     onActivation = {

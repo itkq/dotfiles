@@ -7,6 +7,7 @@
   home.packages = with pkgs; [
     alt-tab-macos # darwin only!
     bat
+    discord
     fzf
     gawk
     gh
@@ -18,6 +19,7 @@
     inputs.nixpkgs-unstable.legacyPackages.${system}.nerdfonts
     jq
     ripgrep
+    wezterm
   ];
   home.username = user;
 }
