@@ -1,4 +1,4 @@
-# https://github.com/itkq/config/blob/deb4e805bc349a95aeaee86d0f5054ef9b29e031/config/.config/wezterm/wezterm.lua
+-- https://github.com/itkq/config/blob/deb4e805bc349a95aeaee86d0f5054ef9b29e031/config/.config/wezterm/wezterm.lua
 
 local wezterm = require("wezterm")
 local config = {}
