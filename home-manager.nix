@@ -31,4 +31,6 @@
     EDITOR = "nvim";
     PAGER = "less";
   };
+
+  xdg = import ./home/lib/xdg.nix {};
 }
