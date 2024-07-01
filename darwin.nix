@@ -69,9 +69,15 @@ in
         show-recents = false;
         launchanim = true;
         mouse-over-hilite-stack = true;
-        orientation = "bottom";
+        orientation = "left";
         tilesize = 48;
-        # persistent-apps = [];
+        largesize = 80;
+        magnification = true;
+        persistent-apps = [
+          "/Applications/Arc.app"
+          "/Applications/Slack.app"
+          "/Applications/Spotify.app"
+        ];
       };
       finder = {
         _FXShowPosixPathInTitle = false;
