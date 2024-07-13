@@ -9,6 +9,7 @@
       "arc"
       "google-japanese-ime"
       "meetingbar"
+      "monitorcontrol"
       "logseq"
       "karabiner-elements"
       "keybase"
