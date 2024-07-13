@@ -16,6 +16,7 @@
       "raycast"
       "scroll-reverser"
       "spotify"
+      "todoist"
     ];
     masApps = {};
     onActivation = {
