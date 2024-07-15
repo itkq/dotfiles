@@ -19,6 +19,7 @@
     inputs.nixpkgs-unstable.legacyPackages.${system}.neovim
     inputs.nixpkgs-unstable.legacyPackages.${system}.nerdfonts
     jq
+    neovim
     peco
     ripgrep
     tig
