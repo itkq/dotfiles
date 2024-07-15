@@ -38,6 +38,9 @@
 
     # ruby
     ruby_3_3
+
+    # cloud
+    awscli2
   ];
   home.username = user;
   home.sessionVariables = {
