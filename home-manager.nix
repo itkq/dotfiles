@@ -19,10 +19,12 @@
     inputs.nixpkgs-unstable.legacyPackages.${system}.neovim
     inputs.nixpkgs-unstable.legacyPackages.${system}.nerdfonts
     jq
+    peco
     ripgrep
     tig
     wezterm
     zsh
+    zinit
 
     # go
     go
