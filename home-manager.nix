@@ -35,6 +35,9 @@
     # node
     nodejs
     nodePackages.npm
+
+    # ruby
+    ruby_3_3
   ];
   home.username = user;
   home.sessionVariables = {
