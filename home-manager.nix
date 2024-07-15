@@ -22,6 +22,13 @@
     ripgrep
     tig
     wezterm
+    zsh
+
+    # go
+    go
+    gopls
+    delve
+    golangci-lint
   ];
   home.username = user;
   home.sessionVariables = {
