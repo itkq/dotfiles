@@ -9,10 +9,20 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.automatically_reload_config = false
+wezterm.on("window-config-reloaded", function(_, _)
+	wezterm.log_info("the config was reloaded for this window!")
+end)
+
 config.color_scheme = "Night Owl (Gogh)"
+config.font = wezterm.font("Ocami")
+
 config.window_background_opacity = 0.93
-config.font = wezterm.font("JetBrains Mono")
-config.font_size = 15.0
+config.scrollback_lines = 350000
+config.enable_scroll_bar = true
+config.check_for_updates = true
+config.check_for_updates_interval_seconds = 86400
+config.exit_behavior = "CloseOnCleanExit"
 
 config.leader = { key = "q", mods = "CTRL", timeout_milliseconds = 1000 }
 local act = wezterm.action
@@ -81,6 +91,14 @@ config.keys = {
 				pane
 			)
 		end),
+	},
+	{
+		key = "l",
+		mods = "CTRL",
+		action = act.Multiple({
+			act.ClearScrollback("ScrollbackOnly"),
+			-- act.SendKey({ key = "L", mods = "CTRL" }),
+		}),
 	},
 	--- tmux config ---
 }
