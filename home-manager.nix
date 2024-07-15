@@ -29,6 +29,10 @@
     gopls
     delve
     golangci-lint
+
+    # node
+    nodejs
+    nodePackages.npm
   ];
   home.username = user;
   home.sessionVariables = {
