@@ -1,8 +1,23 @@
-{ user, inputs, ... }:
+{ config, pkgs, ... }@args:
 
-{ pkgs, ... }:
-
+let 
+  username = args.specialArgs.username;
+in
 {
+  services.nix-daemon.enable = true;
+
+  # zsh is the default shell on Mac and we want to make sure that we're
+  # configuring the rc correctly with nix-darwin paths.
+  programs.zsh.enable = true;
+  programs.zsh.shellInit = ''
+    # Nix
+    if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+      . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    fi
+    # End Nix
+    '';
+
+  environment.shells = with pkgs; [ bashInteractive zsh ];
   homebrew = {
     enable = true;
     casks  = [
@@ -23,8 +38,8 @@
       cleanup = "zap";
     };
   };
-  users.users.${user} = {
-    home = "/Users/${user}";
+  users.users.${username} = {
+    home = "/Users/${username}";
     shell = pkgs.zsh;
   };
   time.timeZone = "Asia/Tokyo";

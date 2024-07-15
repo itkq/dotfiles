@@ -1,5 +1,3 @@
-{ user, inputs, ... }:
-
 { config, lib, pkgs, ... }:
 
 {
@@ -16,8 +14,6 @@
     gnugrep
     gnused
     htop
-    inputs.nixpkgs-unstable.legacyPackages.${system}.neovim
-    inputs.nixpkgs-unstable.legacyPackages.${system}.nerdfonts
     jq
     neovim
     peco
@@ -43,13 +39,12 @@
     # cloud
     awscli2
   ];
-  home.username = user;
   home.sessionVariables = {
     LANG = "en_US.UTF-8";
     LC_CTYPE = "en_US.UTF-8";
-    LC_ALL = "en_US.UTF-8";
-    EDITOR = "nvim";
-    PAGER = "less";
+    # LC_ALL = "en_US.UTF-8";
+    # EDITOR = "nvim";
+    # PAGER = "less";
   };
 
   xdg = import ./home/lib/xdg.nix {};
