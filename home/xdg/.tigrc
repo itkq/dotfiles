@@ -1,0 +1,11 @@
+bind main B  !git rebase -i %(commit) --autostash --autosquash
+bind diff B  !git rebase -i %(commit) --autostash --autosquash
+
+bind generic L  !sh -c "git reflog --pretty=raw | tig --pretty=raw"
+bind generic H  !sh -c "git log -p --pretty=raw -- %(file)| tig --pretty=raw"
+bind generic P  ?git push -u %(remote) %(repo:head)
+bind generic U  ?git pull %(remote)
+bind generic V  !sh -c "whichpr open %(commit)"
+
+
+bind status C !git commit -v
