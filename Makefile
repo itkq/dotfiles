@@ -55,3 +55,12 @@ clean:
 .PHONY: dotfiles
 dotfiles:
 	@./scripts/deploy-config.sh
+
+.PHONY: bootstrap
+# FIXME: validate checksum
+bootstrap:
+	# https://github.com/DeterminateSystems/nix-installer
+	@curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+
+	# https://brew.sh/
+	@NONINTERACTIVE=1 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
