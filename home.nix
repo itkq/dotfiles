@@ -3,6 +3,8 @@
 {
   home.stateVersion = "24.05";
   home.packages = with pkgs; [
+    nix-search-cli
+
     alt-tab-macos # darwin only!
     bat
     direnv
