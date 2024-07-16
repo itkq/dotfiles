@@ -1,0 +1,62 @@
+[user]
+  name = Takuya Kosugiyama
+  email = re@itkq.jp
+  signingkey = F4D2D859C20E488F888C53BF0763459C3AB49A6D
+[includeIf "gitdir:~/src/github.com/ubie-inc/**/*"]
+  path = ~/.gitconfig_ubie
+[includeIf "gitdir:~/src/github.com/LayerXcom/**/*"]
+  path = ~/.gitconfig_layerx
+[color]
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = nvim
+  filemode = true
+  pager = less -r
+[push]
+  default = simple
+  autoSetupRemote = true
+[branch]
+  autosetuprebase = always
+[pull]
+  rebase = true
+[rebase]
+  autostash = true
+[ghq]
+  root = ~/src
+[url "git@github.com:"]
+  pushInsteadOf = https://github.com/
+  pushInsteadOf = git://github.com/
+  insteadOf = https://github.com/
+[url "git@gist.github.com:"]
+  pushInsteadOf = https://gist.github.com/
+  pushInsteadOf = git://gist.github.com/
+[gpg]
+  program = gpg
+[commit]
+  gpgsign = true
+[grep]
+  lineNumber = true
+[fetch]
+  prune = true
+[help]
+  autocorrect = -1
+[rerere]
+  enabled = true
+[secrets]
+  providers = git secrets --aws-provider
+  patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+  patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+  patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+  patterns = private_key
+  patterns = private_key_id
+[init]
+  defaultBranch = main
+[diff]
+  tool = difftastic
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+  difftool = true

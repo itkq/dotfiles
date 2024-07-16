@@ -10,6 +10,7 @@
     pinentry_mac
 
     bat
+    difftastic
     direnv
     discord
     fzf
