@@ -1,5 +1,5 @@
 # language
-export LANG=ja_JP.UTF-8
+export LANG=en_US.UTF-8
 
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=10000000
