@@ -17,6 +17,7 @@
     gh
     ghq
     gnugrep
+    gnupg
     gnused
     htop
     jq

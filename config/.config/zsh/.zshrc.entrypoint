@@ -11,6 +11,11 @@ function profile() {
 
 bindkey -e
 
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export GNUPGHOME="$XDG_CONFIG_HOME"/gnupg
+
 # Environment-local configurations
 [ -f ~/.zshrc.`uname` ] && source ~/.zshrc.`uname`
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
