@@ -5,7 +5,10 @@
   home.packages = with pkgs; [
     nix-search-cli
 
-    alt-tab-macos # darwin only!
+    # TODO: separate darwin
+    alt-tab-macos
+    pinentry_mac
+
     bat
     direnv
     discord
