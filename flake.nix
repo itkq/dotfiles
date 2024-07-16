@@ -34,6 +34,16 @@
       };
     };
 
+    darwinConfigurations.apple-silicon-JKQVTXD3C6 = darwin.lib.darwinSystem {
+      system = system;
+      modules = [
+        ./darwin.nix
+      ];
+      specialArgs = {
+        username = username;
+      };
+    };
+
     homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
       pkgs = pkgs;
       modules = [
