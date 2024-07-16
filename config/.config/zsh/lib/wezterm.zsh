@@ -25,3 +25,14 @@ function create-session() {
   wattach-workspace $session_name
 }
 alias cs="create-session"
+
+# https://vrongmeal.com/blog/clear-screen-preserve-buffer
+my-clear() {
+  for i in {3..$(tput lines)}
+  do
+    printf '\n'
+  done
+  zle clear-screen
+}
+zle -N my-clear
+bindkey '^L' my-clear

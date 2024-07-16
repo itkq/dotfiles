@@ -90,14 +90,6 @@ config.keys = {
 			)
 		end),
 	},
-	{
-		key = "l",
-		mods = "CTRL",
-		action = act.Multiple({
-			act.ClearScrollback("ScrollbackOnly"),
-			-- act.SendKey({ key = "L", mods = "CTRL" }),
-		}),
-	},
 	--- tmux config ---
 }
 
