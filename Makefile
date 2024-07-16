@@ -40,6 +40,11 @@ result/activate: flake.nix
 home-switch: result/activate
 	@./result/activate
 
+update:
+	@nix flake update --extra-experimental-features nix-command --extra-experimental-features flakes
+
+upgrade: clean update darwin-switch home-switch
+
 .PHONY: clean
 clean:
 	rm -f $(DARWIN_HASH) $(FLAKE_HASH)
