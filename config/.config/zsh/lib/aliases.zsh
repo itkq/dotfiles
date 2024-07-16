@@ -1,5 +1,5 @@
 # .zshrc reload
-alias re="source ~/.zshrc"
+alias re="exec $SHELL -l"
 
 # vim
 function vi() {
