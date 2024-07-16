@@ -5,7 +5,7 @@ FLAKE_HASH := .hash_flake
 DARWIN_HASH := .hash_darwin
 
 .PHONY: all
-all: darwin-switch home-switch
+all: darwin-switch home-switch dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix
 	@if [ ! -f $(FLAKE_HASH) ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
@@ -41,11 +41,17 @@ result/activate: flake.nix
 home-switch: result/activate
 	@./result/activate
 
+.PHONY: update
 update:
 	@$(NIX_CMD) flake update
 
+.PHONY: upgrade
 upgrade: clean update darwin-switch home-switch
 
 .PHONY: clean
 clean:
 	rm -f $(DARWIN_HASH) $(FLAKE_HASH)
+
+.PHONY: dotfiles
+dotfiles:
+	@./scripts/deploy-config.sh
