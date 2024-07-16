@@ -1,0 +1,22 @@
+{
+  "Prompt": "[peco]",
+  "Keymap": {
+    "C-c": "peco.Cancel",
+    "C-u": "peco.ScrollPageUp",
+    "C-d": "peco.ScrollPageDown",
+    "C-v": "peco.ToggleSelectionAndSelectNext",
+    "M-d": "peco.DeleteForwardWord",
+    "M-a": "peco.SelectAll",
+    "M-u": "peco.SelectNone",
+    "ArrowLeft": "peco.ScrollLeft",
+    "ArrowRight": "peco.ScrollRight"
+  },
+  "Style": {
+    "Basic": ["on_default", "white"],
+    "SavedSelection": ["on_blue", "black"],
+    "Selected": ["on_cyan", "black"],
+    "Query": ["on_default", "white"],
+    "Matched": ["yellow", "bold"]
+  },
+  "StickySelection": true
+}
