@@ -45,6 +45,8 @@
 
     # cloud
     awscli2
+
+    (callPackage ./pkgs/aqua.nix { })
   ];
 
   programs.zsh = {

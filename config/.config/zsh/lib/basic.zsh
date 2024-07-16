@@ -29,3 +29,6 @@ export EDITOR=nvim
 eval "$(direnv hook zsh)"
 
 export GTAGSLABEL=pygments
+
+# aqua
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
