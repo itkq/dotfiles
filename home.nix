@@ -48,4 +48,24 @@
     # EDITOR = "nvim";
     # PAGER = "less";
   };
+
+  programs.zsh = {
+    enable = true;
+    dotDir = ".config";
+    antidote = {
+      enable = true;
+      package = pkgs.antidote;
+      useFriendlyNames = true;
+      plugins = [
+        "zsh-users/zsh-autosuggestions"
+        "zsh-users/zsh-completions"
+        "zdharma-continuum/fast-syntax-highlighting"
+      ];
+    };
+    initExtraFirst = ''
+      if [ -f $HOME/.config/zsh/.zshrc.entrypoint ]; then
+        source $HOME/.config/zsh/.zshrc.entrypoint
+      fi
+    '';
+  };
 }
