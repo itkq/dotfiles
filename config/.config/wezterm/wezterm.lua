@@ -9,10 +9,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.automatically_reload_config = false
-wezterm.on("window-config-reloaded", function(_, _)
-	wezterm.log_info("the config was reloaded for this window!")
-end)
+config.automatically_reload_config = true
 
 config.color_scheme = "Night Owl (Gogh)"
 config.font = wezterm.font("Ocami")
