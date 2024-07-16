@@ -16,6 +16,7 @@ end)
 
 config.color_scheme = "Night Owl (Gogh)"
 config.font = wezterm.font("Ocami")
+config.font_size = 12.0
 
 config.window_background_opacity = 0.93
 config.scrollback_lines = 350000
