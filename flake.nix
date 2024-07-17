@@ -16,87 +16,47 @@
   };
 
   outputs = { self, nixpkgs, darwin, home-manager, ... }@inputs:
-  {
-    darwinConfigurations.apple-silicon-D2KC9VXCTJ = darwin.lib.darwinSystem {
+  let
+    commonDarwinConfig = { username }: darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      modules = [
-        ./darwin.nix
-      ];
-      specialArgs = {
-        username = "takuya.kosugiyama";
-      };
+      modules = [ ./darwin.nix ];
+      specialArgs = { inherit username; };
     };
 
-    darwinConfigurations.apple-silicon-JKQVTXD3C6 = darwin.lib.darwinSystem {
-      system = "aarch64-darwin";
-      modules = [
-        ./darwin.nix
-      ];
-      specialArgs = {
-        username = "takuya.kosugiyama";
-      };
-    };
-
-    darwinConfigurations.apple-silicon-FVFF3056Q6LW = darwin.lib.darwinSystem {
-      system = "aarch64-darwin";
-      modules = [
-        ./darwin.nix
-      ];
-      specialArgs = {
-        username = "itkq";
-      };
-    };
-
-    homeConfigurations."Darwin-takuya.kosugiyama" = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs {
-        system = "aarch64-darwin";
-      };
+    commonHomeConfig = { username, homeDir, system, isDarwin }: home-manager.lib.homeManagerConfiguration {
+      pkgs = import nixpkgs { inherit system; };
       modules = [
         { nixpkgs.config.allowUnfree = true; }
         {
-          home.username = "takuya.kosugiyama";
-          home.homeDirectory = "/Users/takuya.kosugiyama";
+          home.username = username;
+          home.homeDirectory = homeDir;
         }
         ./home.nix
       ];
-      extraSpecialArgs = {
-        isDarwin = true;
-      };
+      extraSpecialArgs = { inherit isDarwin; };
     };
+  in {
+    darwinConfigurations.apple-silicon-D2KC9VXCTJ = commonDarwinConfig { username = "takuya.kosugiyama"; };
+    darwinConfigurations.apple-silicon-JKQVTXD3C6 = commonDarwinConfig { username = "takuya.kosugiyama"; };
+    darwinConfigurations.apple-silicon-FVFF3056Q6LW = commonDarwinConfig { username = "itkq"; };
 
-    homeConfigurations.Darwin-itkq = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs {
-        system = "aarch64-darwin";
-      };
-      modules = [
-        { nixpkgs.config.allowUnfree = true; }
-        {
-          home.username = "itkq";
-          home.homeDirectory = "/Users/itkq";
-        }
-        ./home.nix
-      ];
-      extraSpecialArgs = {
-        isDarwin = true;
-      };
+    homeConfigurations."Darwin-takuya.kosugiyama" = commonHomeConfig {
+      username = "takuya.kosugiyama";
+      homeDir = "/Users/takuya.kosugiyama";
+      system = "aarch64-darwin";
+      isDarwin = true;
     };
-
-    homeConfigurations.Linux-itkq = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs {
-        system = "x86_64-linux";
-      };
-      modules = [
-        { nixpkgs.config.allowUnfree = true; }
-        {
-          home.username = "itkq";
-          home.homeDirectory = "/home/itkq";
-        }
-        ./home.nix
-      ];
-      extraSpecialArgs = {
-        isDarwin = false;
-      };
+    homeConfigurations.Darwin-itkq = commonHomeConfig {
+      username = "itkq";
+      homeDir = "/Users/itkq";
+      system = "aarch64-darwin";
+      isDarwin = true;
     };
-
+    homeConfigurations.Linux-itkq = commonHomeConfig {
+      username = "itkq";
+      homeDir = "/home/itkq";
+      system = "x86_64-linux";
+      isDarwin = false;
+    };
   };
 }
