@@ -47,7 +47,7 @@
       };
     };
 
-    homeConfigurations.Darwin-takuya.kosugiyama = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations."Darwin-takuya.kosugiyama" = home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
         system = "aarch64-darwin";
       };
