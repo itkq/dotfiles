@@ -43,6 +43,9 @@
     # cloud
     awscli2
 
+    cue
+    cuetools
+
     (callPackage ./pkgs/aqua.nix { })
   ] ++ (lib.optionals isDarwin [
     alt-tab-macos
