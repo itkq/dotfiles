@@ -37,7 +37,17 @@
       };
     };
 
-    homeConfigurations.takuya.kosugiyama = home-manager.lib.homeManagerConfiguration {
+    darwinConfigurations.apple-silicon-FVFF3056Q6LW = darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [
+        ./darwin.nix
+      ];
+      specialArgs = {
+        username = "itkq";
+      };
+    };
+
+    homeConfigurations.Darwin-takuya.kosugiyama = home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
         system = "aarch64-darwin";
       };
@@ -51,7 +61,21 @@
       ];
     };
 
-    homeConfigurations.itkq = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.Darwin-itkq = home-manager.lib.homeManagerConfiguration {
+      pkgs = import nixpkgs {
+        system = "aarch64-darwin";
+      };
+      modules = [
+        { nixpkgs.config.allowUnfree = true; }
+        {
+          home.username = "itkq";
+          home.homeDirectory = "/Users/itkq";
+        }
+        ./home.nix
+      ];
+    };
+
+    homeConfigurations.Linux-itkq = home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
         system = "x86_64-linux";
       };
@@ -67,6 +91,6 @@
         isDarwin = false;
       };
     };
-    
+
   };
 }

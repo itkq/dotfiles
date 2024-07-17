@@ -40,7 +40,7 @@ else
 endif
 
 result/activate: flake.nix
-	@$(NIX_CMD) build .\#homeConfigurations.\"$(USER)\".activationPackage
+	@$(NIX_CMD) build .\#homeConfigurations.\"$(UNAME)-$(USER)\".activationPackage
 
 .PHONY: home-switch
 home-switch: result/activate
