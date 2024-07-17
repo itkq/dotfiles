@@ -57,11 +57,28 @@
         "type": "github"
       }
     },
+    "private": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721201017,
+        "narHash": "sha256-ciweMh/yfanGDpbBO60BLcP+biRkrNl5A/oN/2wgo5c=",
+        "ref": "refs/heads/main",
+        "rev": "07a8df01d0ddf3eba0143cb2dbc8815f3ea79550",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/itkq/dotfiles-private"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/itkq/dotfiles-private"
+      }
+    },
     "root": {
       "inputs": {
         "darwin": "darwin",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "private": "private"
       }
     }
   },

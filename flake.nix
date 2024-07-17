@@ -13,13 +13,18 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    private = {
+      url = "git+ssh://git@github.com/itkq/dotfiles-private";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, darwin, home-manager, private, ... }@inputs:
   let
-    commonDarwinConfig = { username }: darwin.lib.darwinSystem {
+    commonDarwinConfig = { username, extraModules ? [] }: darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      modules = [ ./darwin.nix ];
+      modules = [ ./darwin.nix ] ++ extraModules;
       specialArgs = { inherit username; };
     };
 
@@ -36,7 +41,10 @@
       extraSpecialArgs = { inherit isDarwin; };
     };
   in {
-    darwinConfigurations.D2KC9VXCTJ = commonDarwinConfig { username = "takuya.kosugiyama"; };
+    darwinConfigurations.D2KC9VXCTJ = commonDarwinConfig { 
+      username = "takuya.kosugiyama";
+      extraModules = [ "${private}/darwin-layerx.nix" ];
+    };
     darwinConfigurations.JKQVTXD3C6 = commonDarwinConfig { username = "takuya.kosugiyama"; };
     darwinConfigurations.FVFF3056Q6LW = commonDarwinConfig { username = "itkq"; };
 

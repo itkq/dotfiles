@@ -4,7 +4,6 @@ SERIAL_NUMBER := $(shell /usr/sbin/ioreg -l | grep IOPlatformSerialNumber | cut 
 endif
 NIX_CMD := nix --extra-experimental-features nix-command --extra-experimental-features flakes
 FLAKE_HASH := .hash_flake
-DARWIN_HASH := .hash_darwin
 
 .PHONY: all
 all: $(UNAME)
@@ -25,19 +24,7 @@ result/sw/bin/darwin-rebuild: flake.nix
 
 .PHONY: darwin-switch
 darwin-switch: result/sw/bin/darwin-rebuild
-ifeq ($(UNAME), Darwin)
-	@if [ ! -f $(DARWIN_HASH) ] || [ "$$($(NIX_CMD) hash file darwin.nix)" != "$$(cat $(DARWIN_HASH))" ]; then \
-		if ! ./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#$(SERIAL_NUMBER)"; then \
-			rm -f $(DARWIN_HASH); \
-			exit 1; \
-		fi; \
-		$(NIX_CMD) hash file darwin.nix > $(DARWIN_HASH); \
-	else \
-		echo "darwin.nix unchanged, skipping darwin-rebuild"; \
-	fi
-else
-	@echo "Unimplemented ${UNAME}" >&2
-endif
+	./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#$(SERIAL_NUMBER)"
 
 result/activate: flake.nix
 	@$(NIX_CMD) build .\#homeConfigurations.\"$(UNAME)-$(USER)\".activationPackage
