@@ -13,6 +13,7 @@
     difftastic
     direnv
     discord
+    findutils
     fzf
     gawk
     gh
