@@ -12,7 +12,7 @@ Darwin: darwin-switch home-switch dotfiles
 Linux: home-switch dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix flake.lock
-	@if [ ! -f $(FLAKE_HASH) ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
+	@if [ ! -f $(FLAKE_HASH) ] || [ ! -f ./result/sw/bin/darwin-rebuild ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
 		if ! $(NIX_CMD) build ".#darwinConfigurations.$(SERIAL_NUMBER).system"; then \
 			rm -f $(FLAKE_HASH); \
 			exit 1; \
