@@ -51,7 +51,7 @@ update:
 	@$(NIX_CMD) flake update
 
 .PHONY: upgrade
-upgrade: clean update darwin-switch home-switch
+upgrade: clean update all
 
 .PHONY: clean
 clean:
