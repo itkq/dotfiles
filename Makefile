@@ -11,7 +11,7 @@ all: $(UNAME)
 Darwin: darwin-switch home-switch dotfiles
 Linux: home-switch dotfiles
 
-result/sw/bin/darwin-rebuild: flake.nix
+result/sw/bin/darwin-rebuild: flake.nix flake.lock
 	@if [ ! -f $(FLAKE_HASH) ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
 		if ! $(NIX_CMD) build ".#darwinConfigurations.$(SERIAL_NUMBER).system"; then \
 			rm -f $(FLAKE_HASH); \
@@ -26,7 +26,7 @@ result/sw/bin/darwin-rebuild: flake.nix
 darwin-switch: result/sw/bin/darwin-rebuild
 	./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#$(SERIAL_NUMBER)"
 
-result/activate: flake.nix
+result/activate: flake.nix flake.lock
 	@$(NIX_CMD) build .\#homeConfigurations.\"$(UNAME)-$(USER)\".activationPackage
 
 .PHONY: home-switch
@@ -34,7 +34,7 @@ home-switch: result/activate
 	@./result/activate
 
 .PHONY: update
-update:
+update: clean
 	@$(NIX_CMD) flake update
 
 .PHONY: upgrade
@@ -42,7 +42,7 @@ upgrade: clean update all
 
 .PHONY: clean
 clean:
-	rm -f $(DARWIN_HASH) $(FLAKE_HASH)
+	rm -f $(FLAKE_HASH)
 
 .PHONY: dotfiles
 dotfiles:

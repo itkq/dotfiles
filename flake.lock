@@ -60,11 +60,11 @@
     "private": {
       "flake": false,
       "locked": {
-        "lastModified": 1721201017,
-        "narHash": "sha256-ciweMh/yfanGDpbBO60BLcP+biRkrNl5A/oN/2wgo5c=",
+        "lastModified": 1721202197,
+        "narHash": "sha256-gsYovHJkekk1GOfMo/VSnybHdIa90UrVMp76e5+TEyU=",
         "ref": "refs/heads/main",
-        "rev": "07a8df01d0ddf3eba0143cb2dbc8815f3ea79550",
-        "revCount": 1,
+        "rev": "06f2d8e63118df70c8ffac8a4201d2fd31dcf5f0",
+        "revCount": 2,
         "type": "git",
         "url": "ssh://git@github.com/itkq/dotfiles-private"
       },
