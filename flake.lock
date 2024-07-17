@@ -60,11 +60,11 @@
     "private": {
       "flake": false,
       "locked": {
-        "lastModified": 1721202486,
+        "lastModified": 1721203670,
         "narHash": "sha256-BgCY2pb+AwoQ8ttRh3K6d279Tv+4F9ENEMelvM4DVRg=",
         "ref": "refs/heads/main",
-        "rev": "8301e4da8a8a41f65ba1b3177d2dd82e6ae2688a",
-        "revCount": 3,
+        "rev": "ee9bbf36619b59bc94b9b377291c965e61d4931b",
+        "revCount": 4,
         "type": "git",
         "url": "ssh://git@github.com/itkq/dotfiles-private"
       },
