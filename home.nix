@@ -1,13 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, isDarwin ? true, ... }:
 
 {
   home.stateVersion = "24.05";
   home.packages = with pkgs; [
     nix-search-cli
-
-    # TODO: separate darwin
-    alt-tab-macos
-    pinentry_mac
 
     bat
     difftastic
@@ -48,7 +44,10 @@
     awscli2
 
     (callPackage ./pkgs/aqua.nix { })
-  ];
+  ] ++ (lib.optionals isDarwin [
+    alt-tab-macos
+    pinentry_mac
+  ]);
 
   programs.zsh = {
     enable = true;

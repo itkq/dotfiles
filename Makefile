@@ -1,11 +1,16 @@
 UNAME := $(shell uname)
+ifeq ($(UNAME), Darwin)
 SERIAL_NUMBER := $(shell /usr/sbin/ioreg -l | grep IOPlatformSerialNumber | cut -d= -f2 | cut -d\" -f2)
+endif
 NIX_CMD := nix --extra-experimental-features nix-command --extra-experimental-features flakes
 FLAKE_HASH := .hash_flake
 DARWIN_HASH := .hash_darwin
 
 .PHONY: all
-all: darwin-switch home-switch dotfiles
+all: $(UNAME)
+
+Darwin: darwin-switch home-switch dotfiles
+Linux: home-switch dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix
 	@if [ ! -f $(FLAKE_HASH) ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
@@ -62,5 +67,7 @@ bootstrap:
 	# https://github.com/DeterminateSystems/nix-installer
 	@curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 
+ifeq ($(UNAME), Darwin)
 	# https://brew.sh/
 	@NONINTERACTIVE=1 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+endif
