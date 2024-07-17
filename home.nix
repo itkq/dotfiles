@@ -3,12 +3,13 @@
 {
   home.stateVersion = "24.05";
   home.packages = with pkgs; [
-    nix-search-cli
-
+    awscli2
     bat
+    cue
+    cuetools
+    delve
     difftastic
     direnv
-    discord
     findutils
     fzf
     gawk
@@ -17,38 +18,25 @@
     gnugrep
     gnupg
     gnused
+    go
+    golangci-lint
+    gopls
     htop
     jq
     neovim
+    nix-search-cli
+    nodejs
+    nodePackages.npm
     peco
     ripgrep
+    ruby_3_3
     tig
     wezterm
     zsh
-    zinit
-
-    # go
-    go
-    gopls
-    delve
-    golangci-lint
-
-    # node
-    nodejs
-    nodePackages.npm
-
-    # ruby
-    ruby_3_3
-
-    # cloud
-    awscli2
-
-    cue
-    cuetools
-
     (callPackage ./pkgs/aqua.nix { })
   ] ++ (lib.optionals isDarwin [
     alt-tab-macos
+    discord
     pinentry_mac
   ]);
 
