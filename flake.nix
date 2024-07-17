@@ -59,6 +59,9 @@
         }
         ./home.nix
       ];
+      extraSpecialArgs = {
+        isDarwin = true;
+      };
     };
 
     homeConfigurations.Darwin-itkq = home-manager.lib.homeManagerConfiguration {
@@ -73,6 +76,9 @@
         }
         ./home.nix
       ];
+      extraSpecialArgs = {
+        isDarwin = true;
+      };
     };
 
     homeConfigurations.Linux-itkq = home-manager.lib.homeManagerConfiguration {
