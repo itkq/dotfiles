@@ -14,7 +14,7 @@ Linux: home-switch dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix
 	@if [ ! -f $(FLAKE_HASH) ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
-		if ! $(NIX_CMD) build ".#darwinConfigurations.apple-silicon-$(SERIAL_NUMBER).system"; then \
+		if ! $(NIX_CMD) build ".#darwinConfigurations.$(SERIAL_NUMBER).system"; then \
 			rm -f $(FLAKE_HASH); \
 			exit 1; \
 		fi; \
@@ -27,7 +27,7 @@ result/sw/bin/darwin-rebuild: flake.nix
 darwin-switch: result/sw/bin/darwin-rebuild
 ifeq ($(UNAME), Darwin)
 	@if [ ! -f $(DARWIN_HASH) ] || [ "$$($(NIX_CMD) hash file darwin.nix)" != "$$(cat $(DARWIN_HASH))" ]; then \
-		if ! ./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#apple-silicon-$(SERIAL_NUMBER)"; then \
+		if ! ./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#$(SERIAL_NUMBER)"; then \
 			rm -f $(DARWIN_HASH); \
 			exit 1; \
 		fi; \

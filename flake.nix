@@ -36,9 +36,9 @@
       extraSpecialArgs = { inherit isDarwin; };
     };
   in {
-    darwinConfigurations.apple-silicon-D2KC9VXCTJ = commonDarwinConfig { username = "takuya.kosugiyama"; };
-    darwinConfigurations.apple-silicon-JKQVTXD3C6 = commonDarwinConfig { username = "takuya.kosugiyama"; };
-    darwinConfigurations.apple-silicon-FVFF3056Q6LW = commonDarwinConfig { username = "itkq"; };
+    darwinConfigurations.D2KC9VXCTJ = commonDarwinConfig { username = "takuya.kosugiyama"; };
+    darwinConfigurations.JKQVTXD3C6 = commonDarwinConfig { username = "takuya.kosugiyama"; };
+    darwinConfigurations.FVFF3056Q6LW = commonDarwinConfig { username = "itkq"; };
 
     homeConfigurations."Darwin-takuya.kosugiyama" = commonHomeConfig {
       username = "takuya.kosugiyama";
