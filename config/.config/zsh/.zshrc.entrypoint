@@ -17,9 +17,8 @@ export XDG_DATA_HOME=$HOME/.local/share
 export GNUPGHOME="$XDG_CONFIG_HOME"/gnupg
 
 # Environment-local configurations
-[ -f ~/.zshrc.`uname` ] && source ~/.zshrc.`uname`
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
-[ -f ~/.zshrc.wsl ] && source ~/.zshrc.wsl
+[ -f ~/.config/.zshrc.`uname` ] && source ~/.config/.zshrc.`uname`
+[ -f ~/.config/.zshrc.local ] && source ~/.config/.zshrc.local
 
 source ~/.config/zsh/lib/go.zsh
 source ~/.config/zsh/lib/aliases.zsh
