@@ -26,6 +26,12 @@ return {
     end,
   },
 
+  { "flash.nvim", enabled = false },
+  { "tpope/vim-surround" },
+  { "tpope/vim-repeat" },
+  { "rhysd/clever-f.vim" },
+  { "ruifm/gitlinker.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
@@ -138,6 +144,23 @@ return {
         -- ["*"] = function(server, opts) end,
       },
     },
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    opts = function(_, opts)
+      local nvim_lsp = require("lspconfig")
+      nvim_lsp.denols.setup({
+        on_attach = on_attach,
+        root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+      })
+
+      nvim_lsp.tsserver.setup({
+        on_attach = on_attach,
+        root_dir = nvim_lsp.util.root_pattern("package.json"),
+        single_file_support = false,
+      })
+    end,
   },
 
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
@@ -259,8 +282,8 @@ return {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-            -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-            -- this way you will only jump inside the snippet region
+          -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
+          -- this way you will only jump inside the snippet region
           elseif luasnip.expand_or_jumpable() then
             luasnip.expand_or_jump()
           elseif has_words_before() then
