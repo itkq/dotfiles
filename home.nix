@@ -3,14 +3,19 @@
 {
   home.stateVersion = "24.05";
   home.packages = with pkgs; [
+    amazon-ecr-credential-helper
     awscli2
+    azure-cli
     bat
     cue
     cuetools
+    coreutils
     delve
+    deno
     difftastic
     direnv
     findutils
+    fnm
     fzf
     gawk
     gh
@@ -19,6 +24,7 @@
     gnupg
     gnused
     go
+    google-cloud-sdk
     golangci-lint
     gopls
     htop
@@ -30,6 +36,7 @@
     peco
     ripgrep
     ruby_3_3
+    ssm-session-manager-plugin
     tig
     wezterm
     zsh
