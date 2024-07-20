@@ -26,7 +26,8 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@7993355175c2765e5733dae74f3e0786fe0e5c4f # v12
-      - name: Update flake.lock
+      - name: Update flake.lock and create PR
+        id: update
         uses: DeterminateSystems/update-flake-lock@db4ee38117a597ea8df8f7f75a187dd65093eade # v23
         with:
           token: ${{ steps.app-token.outputs.token }}
@@ -34,3 +35,8 @@ jobs:
           pr-labels: |
             dependencies
             nix-flake
+      - name: Merge PR
+        run: gh pr merge --squash "$PR_NUMBER"
+        env: 
+          PR_NUMBER: ${{ steps.update.outputs.pull-request-number }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
