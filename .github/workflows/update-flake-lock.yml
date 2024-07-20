@@ -19,6 +19,7 @@ jobs:
         uses: shimataro/ssh-key-action@d4fffb50872869abe2d9a9098a6d9c5aa7d16be4 # v2.7.0
         with:
           key: ${{ secrets.DOTFILES_UPDATER_SSH_KEY }}
+          known_hosts: ""
       - name: Checkout repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
