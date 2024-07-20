@@ -15,6 +15,10 @@ jobs:
           app-id: ${{ vars.DOTFILES_UPDATER_APP_ID }}
           private-key: ${{ secrets.DOTFILES_UPDATER_PRIVATE_KEY }}
           ssh-key: ${{ secrets.DOTFILES_UPDATER_SSH_KEY }}
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@d4fffb50872869abe2d9a9098a6d9c5aa7d16be4 # v2.7.0
+        with:
+          key: ${{ secrets.DOTFILES_UPDATER_SSH_KEY }}
       - name: Checkout repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
