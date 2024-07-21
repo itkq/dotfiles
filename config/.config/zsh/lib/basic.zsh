@@ -31,4 +31,5 @@ eval "$(direnv hook zsh)"
 export GTAGSLABEL=pygments
 
 # aqua
+export AQUA_GLOBAL_CONFIG=$XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
