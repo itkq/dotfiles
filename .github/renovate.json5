@@ -1,9 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "github>aquaproj/aqua-renovate-config#2.3.1(config/\\.config/aquaproj-aqua/aqua\\.yaml)"
   ],
   "nix": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["aquaproj/aqua-registry"],
+      "extends": ["schedule:earlyMondays"]
+    }
+  ]
 }
