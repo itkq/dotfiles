@@ -28,6 +28,7 @@
     golangci-lint
     gopls
     htop
+    jrsonnet
     jq
     neovim
     nix-search-cli
