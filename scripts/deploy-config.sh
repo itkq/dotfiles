@@ -6,12 +6,22 @@ cd $(dirname $0)/..
 mkdir -p ~/.config
 pwd="$(pwd)"
 
-for p in $(find ${pwd}/config -mindepth 2 -maxdepth 2 -type d); do
-	dir=$(basename "$p")
-	./scripts/symlink.sh "${pwd}/config/.config/${dir}" "$HOME/.config/${dir}"
-done
+uname=$(uname)
+if [[ "$uname" == "Linux" ]]; then
+  export PINENTRY_PROGRAM="$HOME/.config/gnupg/pinentry-wsl-ps1.sh"
+elif [[ "$uname" == "Darwin" ]]; then
+  export PINENTRY_PROGRAM="$HOME/.nix-profile/bin/pinentry-mac"
+else
+  echo "Unsupported uname: $uname" >&2
+  exit 1
+fi
 
-for p in $(find ${pwd}/config -mindepth 1 -maxdepth 1 -type f); do
-	file=$(basename "$p")
-	./scripts/symlink.sh "${pwd}/config/${file}" "$HOME/${file}"
+for p in $(git ls-files | grep -E '^config/.config' | cut -d/ -f2-); do
+  if [[ "$p" == *".template" ]]; then
+    dst=$(echo $p | sed -e 's/.template$//')
+    envsubst <"config/$p" >"$HOME/$dst"
+  else
+    mkdir -p "$HOME/$(dirname $p)"
+    ./scripts/symlink.sh "${pwd}/config/$p" "$HOME/$p"
+  fi
 done

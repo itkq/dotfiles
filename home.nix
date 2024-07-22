@@ -14,6 +14,7 @@
     deno
     difftastic
     direnv
+    envsubst
     findutils
     fnm
     fzf
