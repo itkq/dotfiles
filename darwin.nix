@@ -22,6 +22,7 @@ in
     enable = true;
     casks  = [
       "arc"
+      "cameracontroller"
       "google-japanese-ime"
       "meetingbar"
       "monitorcontrol"
