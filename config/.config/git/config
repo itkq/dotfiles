@@ -1,7 +1,7 @@
 [user]
   name = Takuya Kosugiyama
   email = re@itkq.jp
-  signingkey = F4D2D859C20E488F888C53BF0763459C3AB49A6D
+  signingkey = 8CFC586763360817
 [includeIf "gitdir:~/src/github.com/ubie-inc/**/*"]
   path = ~/.config/git/config_ubie
 [includeIf "gitdir:~/src/github.com/LayerXcom/**/*"]
