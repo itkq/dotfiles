@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1721270582,
-        "narHash": "sha256-MdZmYPPExntE5rJu88IhJSy8Um4UyZCTXhOwvzbjDVI=",
+        "lastModified": 1721655289,
+        "narHash": "sha256-eJQQwXOKWjom9gtb7HvHd3+Wj5Sp+WrYR44r0EnaO5w=",
         "owner": "LnL7",
         "repo": "nix-darwin",
-        "rev": "a3e4a7b8ffc08c7dc1973822a77ad432e1ec3dec",
+        "rev": "2ae24bcafdb88fdf70b061cc8b18d070dbd9013a",
         "type": "github"
       },
       "original": {
@@ -43,11 +43,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1721409541,
-        "narHash": "sha256-b6PLr0Ty7JPDBtJtjnYzlBf02bbH9alWMAgispMkTwk=",
+        "lastModified": 1721548954,
+        "narHash": "sha256-7cCC8+Tdq1+3OPyc3+gVo9dzUNkNIQfwSDJ2HSi2u3o=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0c53b6b8c2a3e46c68e04417e247bba660689c9d",
+        "rev": "63d37ccd2d178d54e7fb691d7ec76000740ea24a",
         "type": "github"
       },
       "original": {
@@ -60,11 +60,11 @@
     "private": {
       "flake": false,
       "locked": {
-        "lastModified": 1721288670,
-        "narHash": "sha256-+52rhX/jhU5pZauGU0EHUhO2BtlnEPCTOmrqJWBWoG8=",
+        "lastModified": 1721699977,
+        "narHash": "sha256-BgCY2pb+AwoQ8ttRh3K6d279Tv+4F9ENEMelvM4DVRg=",
         "ref": "refs/heads/main",
-        "rev": "c547da3b2516142a519c61e5dae972575521b42d",
-        "revCount": 5,
+        "rev": "9946f8b420b28f53566ec5a9366f68c171760734",
+        "revCount": 7,
         "type": "git",
         "url": "ssh://git@github.com/itkq/dotfiles-private"
       },
