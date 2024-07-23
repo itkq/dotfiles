@@ -13,3 +13,4 @@ registries:
 packages:
 - name: hashicorp/terraform@v1.9.2
 - name: rhysd/actionlint@v1.7.1
+- name: suzuki-shunsuke/pinact@v0.2.1
