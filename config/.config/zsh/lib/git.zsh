@@ -129,7 +129,7 @@ function gc() {
 
 function gha_browse() {
   repo=$(git rev-parse --show-toplevel | awk -F'/' -v OFS='/' '{print $(NF-1), $NF}')
-  find $(git rev-parse --show-toplevel)/.github/workflows -exec basename {} + | grep -vE '^_' | sort | peco | xargs -I%% open "https://github.com/$repo/actions/workflows/%%"
+  find $(git rev-parse --show-toplevel)/.github/workflows -type f | xargs -n1 basename | grep -vE '^_' | sort | peco | xargs -I%% open "https://github.com/$repo/actions/workflows/%%"
 }
 
 function current-repo() {
