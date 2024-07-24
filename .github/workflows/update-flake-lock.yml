@@ -35,8 +35,3 @@ jobs:
           pr-labels: |
             dependencies
             nix-flake
-      - name: Merge PR
-        run: gh pr merge --squash "$PR_NUMBER"
-        env: 
-          PR_NUMBER: ${{ steps.update.outputs.pull-request-number }}
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
