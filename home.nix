@@ -43,6 +43,7 @@
     wezterm
     zsh
     (callPackage ./pkgs/aqua.nix { })
+    (callPackage ./pkgs/whichpr.nix { })
   ] ++ (lib.optionals isDarwin [
     alt-tab-macos
     discord
