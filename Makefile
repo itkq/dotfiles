@@ -10,8 +10,8 @@ PRIVATE_HASH := .hash_private
 .PHONY: all
 all: $(UNAME)
 
-Darwin: darwin home dotfiles
-Linux: home dotfiles
+Darwin: bootstrap darwin home dotfiles
+Linux: bootstrap home dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix flake.lock
 	@if [ ! -f $(FLAKE_HASH) ] || [ ! -f ./result/sw/bin/darwin-rebuild ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
@@ -63,10 +63,12 @@ dotfiles:
 .PHONY: bootstrap
 # FIXME: validate checksum
 bootstrap:
-	# https://github.com/DeterminateSystems/nix-installer
-	@curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+	@if ! command -v nix > /dev/null; then \
+		curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install; \
+	fi
 
 ifeq ($(UNAME), Darwin)
-	# https://brew.sh/
-	@NONINTERACTIVE=1 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	@if [ ! -f /opt/homebrew/bin/brew ]; then \
+		NONINTERACTIVE=1 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; \
+	fi
 endif
