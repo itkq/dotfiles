@@ -10,8 +10,8 @@ PRIVATE_HASH := .hash_private
 .PHONY: all
 all: $(UNAME)
 
-Darwin: darwin-switch home-switch dotfiles
-Linux: home-switch dotfiles
+Darwin: darwin home dotfiles
+Linux: home dotfiles
 
 result/sw/bin/darwin-rebuild: flake.nix flake.lock
 	@if [ ! -f $(FLAKE_HASH) ] || [ ! -f ./result/sw/bin/darwin-rebuild ] || [ "$$($(NIX_CMD) hash file flake.nix)" != "$$(cat $(FLAKE_HASH))" ]; then \
@@ -24,8 +24,8 @@ result/sw/bin/darwin-rebuild: flake.nix flake.lock
 		echo "flake.nix unchanged, skipping nix build for darwin-rebuild"; \
 	fi
 
-.PHONY: darwin-switch
-darwin-switch: result/sw/bin/darwin-rebuild
+.PHONY: darwin
+darwin: result/sw/bin/darwin-rebuild
 	@if [ ! -f $(DARWIN_HASH) ] || [ "$$($(NIX_CMD) hash file darwin.nix)" != "$$(cat $(DARWIN_HASH))" ] \
 		|| [ ! -f $(PRIVATE_HASH) ] || [ "$$(which jq >/dev/null && jq -r '.nodes.private.locked.rev' < flake.lock || echo 'unknown')" != "$$(cat $(PRIVATE_HASH))" ]; then \
 		if ! ./result/sw/bin/darwin-rebuild switch --flake "$$(pwd)#$(SERIAL_NUMBER)"; then \
@@ -41,8 +41,8 @@ darwin-switch: result/sw/bin/darwin-rebuild
 result/activate: flake.nix flake.lock
 	@$(NIX_CMD) build .\#homeConfigurations.\"$(UNAME)-$(USER)\".activationPackage
 
-.PHONY: home-switch
-home-switch: result/activate
+.PHONY: home
+home: result/activate
 	@./result/activate
 
 .PHONY: update
