@@ -1,6 +1,26 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_darwin_amd64.tar.gz",
+      "checksum": "85DA7AEC24999DCEA16E40CB7421301082A8E05505EA1F09172E1CB87775B018",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_darwin_arm64.tar.gz",
+      "checksum": "1D12C16704C77CAC6811D5DAD6AE8D8D475833931EB671E75DB1B5D1E544E441",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_linux_amd64.tar.gz",
+      "checksum": "2C46D5EC783DDDAB49BF81B453121CAB2D6F46756933FA9AD845208311754781",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_linux_arm64.tar.gz",
+      "checksum": "569A6D729FB2159E532208901A7E9504A000FA66D41A0FC387688DA1A421EADF",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.1/actionlint_1.7.1_darwin_amd64.tar.gz",
       "checksum": "EE24184E2E7003C19EB739717B34B7C65D096F2CA0DF8D571837B4F20112D573",
       "algorithm": "sha256"
