@@ -43,11 +43,11 @@
     wezterm
     zsh
     (callPackage ./pkgs/aqua.nix { })
-    (callPackage ./pkgs/whichpr.nix { })
   ] ++ (lib.optionals isDarwin [
     alt-tab-macos
     discord
     pinentry_mac
+    (callPackage ./pkgs/whichpr.nix { }) # some problem in WSL2
   ]);
 
   programs.zsh = {

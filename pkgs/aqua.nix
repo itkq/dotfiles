@@ -6,7 +6,7 @@ pkgs.stdenv.mkDerivation {
   name = "aqua";
   src = pkgs.fetchurl {
     url = if pkgs.stdenv.isDarwin then "https://github.com/aquaproj/aqua/releases/download/v2.27.0/aqua_darwin_arm64.tar.gz" else "https://github.com/aquaproj/aqua/releases/download/v2.27.0/aqua_linux_amd64.tar.gz";
-    sha256 = if pkgs.stdenv.isDarwin then "sha256-z0UcCsSqi4Q7OhOyDENLLjD8dnfo4oKQcUx1Ny/q0qs=" else pkgs.lib.fakeSha256;
+    sha256 = if pkgs.stdenv.isDarwin then "sha256-z0UcCsSqi4Q7OhOyDENLLjD8dnfo4oKQcUx1Ny/q0qs=" else "sha256-kwDhDHFptR0qexiR0e7km2tn2icfV9MdXCHnxOFbgLk=";
   };
 
   sourceRoot = ".";
