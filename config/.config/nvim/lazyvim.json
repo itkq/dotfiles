@@ -1,7 +1,9 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.copilot",
-    "lazyvim.plugins.extras.coding.copilot-chat"
+    "lazyvim.plugins.extras.coding.copilot-chat",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.markdown"
   ],
   "news": {
     "NEWS.md": "2123"
