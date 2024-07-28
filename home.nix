@@ -7,6 +7,7 @@
     awscli2
     azure-cli
     bat
+    cargo
     cue
     cuetools
     coreutils
