@@ -1,4 +1,4 @@
-{ config, lib, pkgs, isDarwin, ... }:
+{ config, lib, pkgs, nixpkgsUnstable, isDarwin, ... }:
 
 {
   home.stateVersion = "24.05";
@@ -31,7 +31,7 @@
     htop
     jrsonnet
     jq
-    neovim
+    nixpkgsUnstable.neovim
     nix-search-cli
     nodejs
     nodePackages.npm

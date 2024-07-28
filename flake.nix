@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     darwin = {
       url = "github:LnL7/nix-darwin";
@@ -20,7 +21,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, private, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, darwin, home-manager, private, ... }@inputs:
   let
     commonDarwinConfig = { username, extraModules ? [] }: darwin.lib.darwinSystem {
       system = "aarch64-darwin";
@@ -38,7 +39,10 @@
         }
         ./home.nix
       ];
-      extraSpecialArgs = { inherit isDarwin; };
+      extraSpecialArgs = { 
+        inherit isDarwin;
+        nixpkgsUnstable = import nixpkgs-unstable { inherit system; };
+      };
     };
   in {
     darwinConfigurations.D2KC9VXCTJ = commonDarwinConfig { 
