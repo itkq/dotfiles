@@ -16,3 +16,4 @@ packages:
 - name: suzuki-shunsuke/pinact@v0.2.1
 - name: fujiwara/iam-policy-finder@v0.0.4
 - name: koalaman/shellcheck@v0.10.0
+- name: suzuki-shunsuke/ghatm@v0.3.1

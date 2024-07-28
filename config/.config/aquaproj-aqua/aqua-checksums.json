@@ -56,6 +56,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.1/ghatm_darwin_amd64.tar.gz",
+      "checksum": "75FAC7DD7BE0DA238372DD3E15D66408D87A1689284CFA43CCE4AD4695EAD744",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.1/ghatm_darwin_arm64.tar.gz",
+      "checksum": "8EFBCF87213FC3BC01FC6BBA2B26EAD0B5404C8E00400486F34DC5ED5188AA98",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.1/ghatm_linux_amd64.tar.gz",
+      "checksum": "BF471BDAE316C9CBF7954D333BEC4B2BE7BD42F4CD7D02212CBC4A9D7B7B9D8B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.1/ghatm_linux_arm64.tar.gz",
+      "checksum": "6CD96E9A37D6EF43ED64A663DF39FBE7982D3BB8AA46248D8AD137568A9D6C66",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v0.2.1/pinact_darwin_amd64.tar.gz",
       "checksum": "6E4CEE64BDD8C4D15274FB5923D36D428F2285B943F39BB859AD71D260245602",
       "algorithm": "sha256"
