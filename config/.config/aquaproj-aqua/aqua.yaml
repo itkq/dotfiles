@@ -15,3 +15,4 @@ packages:
 - name: rhysd/actionlint@v1.7.1
 - name: suzuki-shunsuke/pinact@v0.2.1
 - name: fujiwara/iam-policy-finder@v0.0.4
+- name: koalaman/shellcheck@v0.10.0
