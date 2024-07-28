@@ -1,4 +1,4 @@
-{ config, lib, pkgs, nixpkgsUnstable, isDarwin, ... }:
+{ lib, pkgs, nixpkgsUnstable, isDarwin, ... }:
 
 {
   home.stateVersion = "24.05";

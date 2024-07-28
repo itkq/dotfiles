@@ -21,7 +21,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, darwin, home-manager, private, ... }@inputs:
+  outputs = { nixpkgs, nixpkgs-unstable, darwin, home-manager, private, ... }:
   let
     commonDarwinConfig = { username, extraModules ? [] }: darwin.lib.darwinSystem {
       system = "aarch64-darwin";
