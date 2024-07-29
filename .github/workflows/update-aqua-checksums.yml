@@ -1,0 +1,22 @@
+name: update-aqua-checksums
+on: 
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - config/.config/aquaproj-aqua/aqua-checksums.json
+      - config/.config/aquaproj-aqua/aqua.yaml
+jobs:
+  update-aqua-checksums:
+    uses: aquaproj/update-checksum-workflow/.github/workflows/update-checksum.yaml@75c72cdc372a43dd1b1ad0458748f5d6bfeac7b9 # v1.0.1
+    permissions:
+      contents: read
+    with:
+      aqua_version: v2.30.0
+      prune: true
+    secrets:
+      gh_app_id: ${{ vars.DOTFILES_UPDATER_APP_ID }}
+      gh_app_private_key: ${{ secrets.DOTFILES_UPDATER_PRIVATE_KEY }}
