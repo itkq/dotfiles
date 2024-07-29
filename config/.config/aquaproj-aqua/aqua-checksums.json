@@ -76,6 +76,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_darwin_amd64.tar.gz",
+      "checksum": "524745158FFA66B6540D5729BF6AE3225224C328F458B9148761E0C17B0BA983",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_darwin_arm64.tar.gz",
+      "checksum": "8B251D324489B0CDA049F56DB0BD389B763130D1DADF959ECE60E23C59A076B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_linux_amd64.tar.gz",
+      "checksum": "399BBE5E70C427BC44150010C50429DDFEA393C1D4C0C24E13B68D12D4F46872",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_linux_arm64.tar.gz",
+      "checksum": "4B37C2652136C60C1B9B1F9CC6AE21F8B05E51061E9860EB30AC4AAC3FA6BE4B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v0.2.1/pinact_darwin_amd64.tar.gz",
       "checksum": "6E4CEE64BDD8C4D15274FB5923D36D428F2285B943F39BB859AD71D260245602",
       "algorithm": "sha256"
@@ -93,26 +113,6 @@
     {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v0.2.1/pinact_linux_arm64.tar.gz",
       "checksum": "E7E1372652F1FA4A15C2BB12CE9679EE76B6D99C216196C424C623625B8DC48C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/releases.hashicorp.com/terraform/1.9.2/terraform_1.9.2_darwin_amd64.zip",
-      "checksum": "315E85F2C0DE7D2B8862F9E7F0F78A093501BE474B78ED0017AEEF9CD902A8EB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/releases.hashicorp.com/terraform/1.9.2/terraform_1.9.2_darwin_arm64.zip",
-      "checksum": "DA2093EA34C0EED12CE6C2238B35E2CAF71D3E26CDAD3C55607C97BE7EBE98ED",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/releases.hashicorp.com/terraform/1.9.2/terraform_1.9.2_linux_amd64.zip",
-      "checksum": "D5F5AABA0F8EBFF88EF0B23935872E154E2ABF3172596261BE834605BA3BA714",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/releases.hashicorp.com/terraform/1.9.2/terraform_1.9.2_linux_arm64.zip",
-      "checksum": "901821024261B851C46E2060D8849750A93DFE64BF8BCB85839F13325945F889",
       "algorithm": "sha256"
     },
     {
