@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: read
     with:
+      working_directory: config/.config/aquaproj-aqua
       aqua_version: v2.30.0
       prune: true
     secrets:
