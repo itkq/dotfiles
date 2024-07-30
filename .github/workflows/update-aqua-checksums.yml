@@ -9,15 +9,21 @@ on:
     paths:
       - config/.config/aquaproj-aqua/aqua-checksums.json
       - config/.config/aquaproj-aqua/aqua.yaml
+env:
+  AQUA_DIR: config/.config/aquaproj-aqua
 jobs:
   update-aqua-checksums:
-    uses: aquaproj/update-checksum-workflow/.github/workflows/update-checksum.yaml@437067ad2fba9ba8ed8454cf207f2532432d4e28 # v1.0.2
+    # aquaproj/update-checksum-workflow doesn't work for somewhat
+    # uses: aquaproj/update-checksum-workflow/.github/workflows/update-checksum.yaml@437067ad2fba9ba8ed8454cf207f2532432d4e28 # v1.0.2
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
     permissions:
       contents: read
-    with:
-      working_directory: config/.config/aquaproj-aqua
-      aqua_version: v2.30.0
-      prune: true
-    secrets:
-      gh_app_id: ${{ vars.DOTFILES_UPDATER_APP_ID }}
-      gh_app_private_key: ${{ secrets.DOTFILES_UPDATER_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - uses: aquaproj/aqua-installer@6ce1f8848ec8e61f14d57bd5d7597057a6dd187c # v3.0.1
+        # Install ghcp
+        with:
+          aqua_version: v2.30.0
+          working_directory: ${{ env.AQUA_DIR }}
+      - run: ghcp -v
