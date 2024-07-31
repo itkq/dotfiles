@@ -1,0 +1,19 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_linux_amd64.tar.gz",
+      "checksum": "399BBE5E70C427BC44150010C50429DDFEA393C1D4C0C24E13B68D12D4F46872",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.15.0/ghcp_linux_arm64.tar.gz",
+      "checksum": "4B37C2652136C60C1B9B1F9CC6AE21F8B05E51061E9860EB30AC4AAC3FA6BE4B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.206.0/registry.yaml",
+      "checksum": "083BEB8AF020AE4E33AE3FBADD3D9FCDF7760A3241D6C77F0408CBD990472011",
+      "algorithm": "sha256"
+    }
+  ]
+}

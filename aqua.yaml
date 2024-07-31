@@ -5,15 +5,9 @@ checksum:
   enabled: true
   require_checksum: true
   supported_envs:
-  - darwin
   - linux
 registries:
 - type: standard
   ref: v4.206.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: hashicorp/terraform@v1.9.3
-- name: rhysd/actionlint@v1.7.1
-- name: suzuki-shunsuke/pinact@v0.2.1
-- name: fujiwara/iam-policy-finder@v0.0.4
-- name: koalaman/shellcheck@v0.10.0
-- name: suzuki-shunsuke/ghatm@v0.3.1
+- name: suzuki-shunsuke/ghcp@v1.15.0 # for update-aqua-checksums
