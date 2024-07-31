@@ -1,6 +1,26 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/cli/cli/v2.53.0/gh_2.53.0_linux_amd64.tar.gz",
+      "checksum": "ED2CAF962730E0F593A2B6CAE42A9B827B8A9C8BDD6EFB56EAE7FEEC38BDD0C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.53.0/gh_2.53.0_linux_arm64.tar.gz",
+      "checksum": "22C4254025EF5ACD7E5406A0EADE879E868204861FCB3CD51A95A20CDA5D221A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.53.0/gh_2.53.0_macOS_amd64.zip",
+      "checksum": "9319B54B12AE3D03CC129E20CAE7A78101D864C6C52EEB19F184FC868DF74A85",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.53.0/gh_2.53.0_macOS_arm64.zip",
+      "checksum": "D9A6A358292D26F35287F7DC4BB0FE2EAE1BB8DEEA3AC6957644987FADD2AF4D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_darwin_amd64.tar.gz",
       "checksum": "85DA7AEC24999DCEA16E40CB7421301082A8E05505EA1F09172E1CB87775B018",
       "algorithm": "sha256"
@@ -21,6 +41,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
+      "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-arm64",
+      "checksum": "4DD2D8A0661DF0B22F1BB9A1F9830F06B6F3B8F7D91211A1EF5D7C4F06A8B4A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-macos-amd64",
+      "checksum": "4155822BBF5EA90F5C79CF254665975EB4274D426D0709770C21774DE5407443",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-macos-arm64",
+      "checksum": "0BBE619E663E0DE2C550BE2FE0D240D076799D6F8A652B70FA04AEA8A8362E8A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -33,6 +73,26 @@
     {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz",
       "checksum": "6C881AB0698E4E6EA235245F22832860544F17BA386442FE7E9D629F8CBEDF87",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/peco/peco/v0.5.11/peco_darwin_amd64.zip",
+      "checksum": "C0A2C2F510DE5711AB23B0E07D3211E54CA4B4E6BFF6EAB7020037D9AC0E067D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/peco/peco/v0.5.11/peco_darwin_arm64.zip",
+      "checksum": "D5317EF7964FBD24C877CB257C73B06D2BB91EFEC2C0C206082B83CBA45C9EBC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/peco/peco/v0.5.11/peco_linux_amd64.tar.gz",
+      "checksum": "EC3C32A4950A6DBCA7AB79AE2EDFD9E28721AB3A0AEAB938A2147CCF77FD3BE2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/peco/peco/v0.5.11/peco_linux_arm64.tar.gz",
+      "checksum": "69384496EF5A1F6566303CAF30F7BE6334F39DE1F42F9E0EE2BF327F8123ECF6",
       "algorithm": "sha256"
     },
     {

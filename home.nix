@@ -20,7 +20,6 @@
     fnm
     fzf
     gawk
-    gh
     ghq
     gnugrep
     gnupg
@@ -31,12 +30,10 @@
     gopls
     htop
     jrsonnet
-    jq
     nixpkgsUnstable.neovim
     nix-search-cli
     nodejs
     nodePackages.npm
-    peco
     postgresql_16
     ripgrep
     ruby_3_3
