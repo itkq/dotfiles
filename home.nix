@@ -32,8 +32,6 @@
     jrsonnet
     nixpkgsUnstable.neovim
     nix-search-cli
-    nodejs
-    nodePackages.npm
     postgresql_16
     ripgrep
     ruby_3_3

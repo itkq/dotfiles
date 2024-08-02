@@ -36,3 +36,6 @@ export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua
 aqua i -l -a
 
 alias ls="ls --color=auto"
+
+# fnm
+eval "$(fnm env --use-on-cd)"
