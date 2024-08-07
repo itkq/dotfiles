@@ -11,7 +11,7 @@ registries:
 - type: standard
   ref: v4.210.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: hashicorp/terraform@v1.9.3
+- name: hashicorp/terraform@v1.9.4
 - name: rhysd/actionlint@v1.7.1
 - name: suzuki-shunsuke/pinact@v0.2.1
 - name: fujiwara/iam-policy-finder@v0.0.4
