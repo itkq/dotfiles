@@ -30,6 +30,7 @@
     gopls
     htop
     jrsonnet
+    mysql80
     nixpkgsUnstable.neovim
     nix-search-cli
     postgresql_16
