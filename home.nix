@@ -16,6 +16,7 @@
     difftastic
     direnv
     envsubst
+    ffmpeg
     findutils
     fnm
     fzf
