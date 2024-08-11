@@ -7,6 +7,10 @@
   "nix": {
     "enabled": true
   },
+  "labels": [
+    "dependencies",
+    "renovate",
+  ],
   "automerge": true,
   "platformAutomerge": true,
   "packageRules": [
