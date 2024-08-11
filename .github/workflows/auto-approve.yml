@@ -1,0 +1,23 @@
+name: auto-approve
+on: 
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - flake.lock
+jobs:
+  auto-approve:
+    if: github.actor == 'itkq-dotfiles-updater[bot]'
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: approve
+        run: |
+          gh pr review --approve "$PR_NUMBER"
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ github.token }}

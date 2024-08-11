@@ -35,3 +35,8 @@ jobs:
           pr-labels: |
             dependencies
             nix-flake
+      - name: Enable Automerge
+        run: gh pr merge --auto --squash "$PR_NUMBER"
+        env:
+          PR_NUMBER: ${{ steps.update.outputs.pull-request-number }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
