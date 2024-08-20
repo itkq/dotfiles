@@ -1,23 +1,23 @@
 {
   "checksums": [
     {
-      "id": "github_release/github.com/cli/cli/v2.54.0/gh_2.54.0_linux_amd64.tar.gz",
-      "checksum": "C4441B2ACFB63FEB5FC37A346B0A0A66080D657397F1EB81E3025961DCB06DD3",
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_linux_amd64.tar.gz",
+      "checksum": "49700B3FEDB5BFCBEF696FE9F1F69091CEB9CAF2D40BD872B5028C451EFC52BC",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.54.0/gh_2.54.0_linux_arm64.tar.gz",
-      "checksum": "A660E5AB768390FC1F328DF9604930AC06AD5CD7B98E96761BE667141FE19C7C",
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_linux_arm64.tar.gz",
+      "checksum": "2D5D2B965E0122C41752E64873DC33C213B068C1E7A9C396CBD8F6895FB9685F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.54.0/gh_2.54.0_macOS_amd64.zip",
-      "checksum": "862AF4B481952BB9141D946A84A765510C7C1F94850EDB14CD31FCBA5204C6DD",
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_macOS_amd64.zip",
+      "checksum": "58448671A680C2B5245333BB44466305A28CF65E8F090C1FFD7EF5E729AF4463",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.54.0/gh_2.54.0_macOS_arm64.zip",
-      "checksum": "1C8FCA680D3AF417614AB31261F551C435E86AA44746BB3436A185C486BDE765",
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_macOS_arm64.zip",
+      "checksum": "11B60CEF134DA32E001DEC47C897FE7023AC2059B1327F71F04436D1F4B59459",
       "algorithm": "sha256"
     },
     {
@@ -176,8 +176,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.210.0/registry.yaml",
-      "checksum": "68021098BB5A22819E9C86617C700565CD3FCB1BD11D00D48DCC80D835F7A71DD90AB784EED7A433A5B9427B55A43F974A2B6A67118B8C393B5BF8FA89100741",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.212.0/registry.yaml",
+      "checksum": "ADAF1497EBA0626727A14310D22F6A30F08A9BDF040C8B8C8AA1E70FDC057570CB8A6F9F5AEA6E4E7B4B5A0DD3C8A35EE886438AE10C2A690A3C2C2D9FAD807E",
       "algorithm": "sha512"
     }
   ]
