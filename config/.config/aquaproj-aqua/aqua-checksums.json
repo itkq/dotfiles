@@ -156,28 +156,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.4/terraform_1.9.4_darwin_amd64.zip",
-      "checksum": "D23C34DBD84884913A939F34ABFC46065F2794F43E1614D0F7B70AF4E206AC8A",
+      "id": "http/releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_darwin_amd64.zip",
+      "checksum": "C28945C377D04B1D237F704729258234C471C8C4F617A1303042862F708EBBC6",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.4/terraform_1.9.4_darwin_arm64.zip",
-      "checksum": "440865E068811F5573B900B6E9822E266C1E6074EB31DACCC2537D1CF24A0DD7",
+      "id": "http/releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_darwin_arm64.zip",
+      "checksum": "B7ECA5CD6F0F6644D45D8708C1B864E64A9E26C355D2C9B585FAA049F640FE71",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.4/terraform_1.9.4_linux_amd64.zip",
-      "checksum": "6E9B2CC741875AB906D800AF3134B076489F049565E0A1DBDB6DEACD91F5054C",
+      "id": "http/releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_linux_amd64.zip",
+      "checksum": "9CF727B4D6BD2D4D2908F08BD282F9E4809D6C3071C3B8EBE53558BEE6DC913B",
       "algorithm": "sha256"
     },
     {
-      "id": "http/releases.hashicorp.com/terraform/1.9.4/terraform_1.9.4_linux_arm64.zip",
-      "checksum": "ADA5A330C09456DF091BD2449C80884E3E368B80978D5849C940129047F43D1A",
+      "id": "http/releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_linux_arm64.zip",
+      "checksum": "ADB3206971BC73FD37C7B50399EF79FE5610B03D3F2D1783D91E119422A113FD",
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.210.0/registry.yaml",
-      "checksum": "68021098BB5A22819E9C86617C700565CD3FCB1BD11D00D48DCC80D835F7A71DD90AB784EED7A433A5B9427B55A43F974A2B6A67118B8C393B5BF8FA89100741",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.212.0/registry.yaml",
+      "checksum": "ADAF1497EBA0626727A14310D22F6A30F08A9BDF040C8B8C8AA1E70FDC057570CB8A6F9F5AEA6E4E7B4B5A0DD3C8A35EE886438AE10C2A690A3C2C2D9FAD807E",
       "algorithm": "sha512"
     }
   ]
