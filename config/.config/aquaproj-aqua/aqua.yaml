@@ -11,12 +11,12 @@ registries:
 - type: standard
   ref: v4.212.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: hashicorp/terraform@v1.9.4
+- name: hashicorp/terraform@v1.9.5
 - name: rhysd/actionlint@v1.7.1
 - name: suzuki-shunsuke/pinact@v0.2.1
 - name: fujiwara/iam-policy-finder@v0.0.4
 - name: koalaman/shellcheck@v0.10.0
 - name: suzuki-shunsuke/ghatm@v0.3.1
-- name: cli/cli@v2.54.0
+- name: cli/cli@v2.55.0
 - name: jqlang/jq@jq-1.7.1
 - name: peco/peco@v0.5.11

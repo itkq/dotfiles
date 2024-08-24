@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: approve
         run: |
-          gh pr review --approve "$PR_NUMBER"
+          gh pr -R ${{ github.repository }} review --approve "$PR_NUMBER"
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GH_TOKEN: ${{ github.token }}
