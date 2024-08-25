@@ -1,0 +1,60 @@
+name: test
+on: pull_request
+permissions: {}
+jobs:
+  path-filter:
+    timeout-minutes: 30
+    outputs:
+      update-aqua-checksums: ${{steps.changes.outputs.update-aqua-checksums}}
+      auto-approve: ${{steps.changes.outputs.auto-approve}}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: |
+            update-aqua-checksums:
+              - config/.config/aquaproj-aqua/aqua-checksums.json
+              - config/.config/aquaproj-aqua/aqua.yaml
+              - .github/workflows/test.yaml
+            auto-approve:
+              - flake.lock
+              - .github/workflows/test.yaml
+  update-aqua-checksums:
+    needs: path-filter
+    if: needs.path-filter.outputs.update-aqua-checksums == 'true'
+    uses: aquaproj/update-checksum-workflow/.github/workflows/update-checksum.yaml@437067ad2fba9ba8ed8454cf207f2532432d4e28 # v1.0.2
+    permissions:
+      contents: read
+    with:
+      working_directory: config/.config/aquaproj-aqua
+      aqua_version: v2.30.0
+      prune: true
+    secrets:
+      gh_app_id: ${{ vars.DOTFILES_UPDATER_APP_ID }}
+      gh_app_private_key: ${{ secrets.DOTFILES_UPDATER_PRIVATE_KEY }}
+  auto-approve:
+    timeout-minutes: 30
+    needs: path-filter
+    if: needs.path-filter.outputs.auto-approve == 'true' && github.actor == 'itkq-dotfiles-updater[bot]'
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: approve
+        run: |
+          gh pr -R ${{ github.repository }} review --approve "$PR_NUMBER"
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ github.token }}
+  status-check:
+    timeout-minutes: 30
+    needs:
+      - update-aqua-checksums
+      - auto-approve
+    if: failure()
+    permissions: {}
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
