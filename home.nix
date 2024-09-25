@@ -32,6 +32,7 @@
     htop
     jrsonnet
     mysql80
+    ngrok
     nixpkgsUnstable.neovim
     nix-search-cli
     postgresql_16
