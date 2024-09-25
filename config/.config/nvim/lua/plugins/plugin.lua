@@ -30,8 +30,19 @@ return {
   { "tpope/vim-surround" },
   { "tpope/vim-repeat" },
   { "rhysd/clever-f.vim" },
-  { "ruifm/gitlinker.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-
+  {
+    "ruifm/gitlinker.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    keys = {
+      { "<leader>gy", "<cmd>lua require('gitlinker').get_buf_range_url('n')<cr>", desc = "Copy Git Link" },
+      {
+        "<leader>gY",
+        "<cmd>lua require('gitlinker').get_buf_range_url('n', {action_callback = require('gitlinker.actions').open_in_browser})<cr>",
+        desc = "Open Git Link",
+      },
+    },
+    opts = {},
+  },
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
