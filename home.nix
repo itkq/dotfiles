@@ -40,6 +40,7 @@
     ruby_3_3
     ssm-session-manager-plugin
     tig
+    vscode
     wezterm
     zsh
     (callPackage ./pkgs/aqua.nix { })
