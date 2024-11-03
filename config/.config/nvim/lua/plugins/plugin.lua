@@ -174,6 +174,43 @@ return {
     end,
   },
 
+  {
+    "nvimtools/none-ls.nvim",
+    cond = not vim.g.vscode,
+    event = { "BufReadPost", "BufWritePost", "BufNewFile" },
+    opts = function()
+      local null_ls = require("null-ls")
+      return {
+        -- Primary Source of Truth is null-ls.
+        sources = {
+          -- -- JavaScript
+          -- null_ls.builtins.formatting.prettierd.with({
+          --   condition = function(utils)
+          --     return not utils.root_has_file({ "biome.json", "biome.jsonc", "deno.json", "deno.jsonc" })
+          --   end,
+          -- }),
+          -- Protocol Buffers
+          null_ls.builtins.diagnostics.buf,
+          null_ls.builtins.formatting.buf,
+          -- Dockerfile
+          null_ls.builtins.diagnostics.hadolint,
+          -- GitHub Actions
+          null_ls.builtins.diagnostics.actionlint,
+          -- ShellScript
+          null_ls.builtins.formatting.shfmt.with({
+            extra_args = { "-i", "2" },
+          }),
+          -- Lua
+          null_ls.builtins.formatting.stylua,
+          -- not supported by mason
+          -- Nix
+          -- null_ls.builtins.formatting.nixfmt,
+        },
+        debug = true,
+      }
+    end,
+  },
+
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
   { import = "lazyvim.plugins.extras.lang.typescript" },
