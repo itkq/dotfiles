@@ -12,7 +12,7 @@ registries:
   ref: v4.246.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: hashicorp/terraform@v1.9.8
-- name: rhysd/actionlint@v1.7.3
+- name: rhysd/actionlint@v1.7.4
 - name: suzuki-shunsuke/pinact@v1.0.0
 - name: fujiwara/iam-policy-finder@v0.0.4
 - name: koalaman/shellcheck@v0.10.0
