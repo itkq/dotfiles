@@ -9,7 +9,7 @@ checksum:
   - linux
 registries:
 - type: standard
-  ref: v4.258.1 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.265.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: hashicorp/terraform@v1.10.0
 - name: rhysd/actionlint@v1.7.4
