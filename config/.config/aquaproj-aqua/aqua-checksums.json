@@ -61,6 +61,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.aarch64.tar.xz",
+      "checksum": "BBD2F14826328EEE7679DA7221F2BC3AFB011F6A928B848C80C321F6046DDF81",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -176,8 +181,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.286.0/registry.yaml",
-      "checksum": "608A4B81452F309A941AC536CD6B6B8F6C4B8BD0084355977D8D0ED49F17CAE2274A2D4D7570A4B761ADCD0A5AE5A2E3EBFBAA9C9F1D470408A7D6C8ACD0D521",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.291.0/registry.yaml",
+      "checksum": "31A0C654DC1256DFC37AF811E222A379C9716E03F70C7C0A5A616D98979A5412E9D4B2D1C10C5C677F31D75A84D62A60759F377216F83481A11A472024D53497",
       "algorithm": "sha512"
     }
   ]
