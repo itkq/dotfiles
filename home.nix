@@ -18,7 +18,6 @@
     envsubst
     ffmpeg
     findutils
-    fnm
     fzf
     gawk
     ghq
