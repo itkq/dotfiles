@@ -21,4 +21,3 @@ packages:
 - name: jqlang/jq@jq-1.7.1
 - name: peco/peco@v0.5.11
 - name: mikefarah/yq@v4.45.1
-- name: pnpm/pnpm@v10.4.1
