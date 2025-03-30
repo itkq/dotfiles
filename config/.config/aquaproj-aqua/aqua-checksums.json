@@ -81,6 +81,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/mikefarah/yq/v4.45.1/yq_darwin_amd64",
+      "checksum": "CEE787479550F0C94662E45251E7BB80F70E7071840BD19CE24542E9BCB4157A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mikefarah/yq/v4.45.1/yq_darwin_arm64",
+      "checksum": "83EDB55E254993F9043D01A1515205B54FFC2C7CE815A780573DA64AFAF2C71B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mikefarah/yq/v4.45.1/yq_linux_amd64",
+      "checksum": "654D2943CA1D3BE2024089EB4F270F4070F491A0610481D128509B2834870049",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mikefarah/yq/v4.45.1/yq_linux_arm64",
+      "checksum": "CEEA73D4C86F2E5C91926EE0639157121F5360DA42BEEB8357783D79C2CC6A1D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/peco/peco/v0.5.11/peco_darwin_amd64.zip",
       "checksum": "C0A2C2F510DE5711AB23B0E07D3211E54CA4B4E6BFF6EAB7020037D9AC0E067D",
       "algorithm": "sha256"
@@ -98,6 +118,26 @@
     {
       "id": "github_release/github.com/peco/peco/v0.5.11/peco_linux_arm64.tar.gz",
       "checksum": "69384496EF5A1F6566303CAF30F7BE6334F39DE1F42F9E0EE2BF327F8123ECF6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.4.1/pnpm-linux-arm64",
+      "checksum": "CB4C55B43033577719DF2918E83C09FF7CC5AD04872C1959B36F39362399D999",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.4.1/pnpm-linux-x64",
+      "checksum": "24FDBA5CAAB4190D9F1B0F4E7E2A7557F534519047AC7277430E048986775381",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.4.1/pnpm-macos-arm64",
+      "checksum": "0B396D48E9697588BFD4F3D40ED0D10D043432ECF1FE30DCDCAD0F87B6D4140A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.4.1/pnpm-macos-x64",
+      "checksum": "7FDB462A4A6FA2C4E07626B8BC88599671FD5F16DB1E8EF2BB934290E132E4B3",
       "algorithm": "sha256"
     },
     {
