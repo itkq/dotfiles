@@ -1,8 +1,0 @@
----
-# aqua - Declarative CLI Version Manager
-# https://aquaproj.github.io/
-registries:
-- type: standard
-  ref: v4.210.0
-packages:
-- name: suzuki-shunsuke/ghcp@v1.16.0 # for update-aqua-checksums

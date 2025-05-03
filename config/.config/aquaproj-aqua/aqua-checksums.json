@@ -221,6 +221,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.16.0/ghcp_darwin_amd64.tar.gz",
+      "checksum": "CA5EB65ED4469148B539AA4B83E1FB77887FAC3C36896DF8E5CC8702E7488B1A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.16.0/ghcp_darwin_arm64.tar.gz",
+      "checksum": "56B0ED7135FEB44A2A7EC6A8960CA1E4C15D64B45A4ECDB307FC91A4EBBF33AC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.16.0/ghcp_linux_amd64.tar.gz",
+      "checksum": "89D99FA73477C11A60B274E385B9E990125D411C73F971D4CF21069BF7DB92C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghcp/v1.16.0/ghcp_linux_arm64.tar.gz",
+      "checksum": "7DE544BF3CD3FA2830671F078484F0AA2C9C8BEC8D7E887835250E77A62CC775",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.5/pinact_darwin_amd64.tar.gz",
       "checksum": "7546BF811AD263AF402549C3AE1C52156BCE864D12EF369D03F0CE564625463C",
       "algorithm": "sha256"
