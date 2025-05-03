@@ -29,3 +29,4 @@ packages:
   registry: local
 - name: goreleaser/goreleaser@v2.9.0
 - name: golang/go@go1.24.2
+- name: a8m/envsubst@v1.4.3

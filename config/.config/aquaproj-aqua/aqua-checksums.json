@@ -1,6 +1,26 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/a8m/envsubst/v1.4.3/envsubst-Darwin-arm64",
+      "checksum": "D0060B1585156176354F96CD570A4CC1",
+      "algorithm": "md5"
+    },
+    {
+      "id": "github_release/github.com/a8m/envsubst/v1.4.3/envsubst-Darwin-x86_64",
+      "checksum": "F0C1F592BFF9F2842B4BCF4D6E7AAC10",
+      "algorithm": "md5"
+    },
+    {
+      "id": "github_release/github.com/a8m/envsubst/v1.4.3/envsubst-Linux-arm64",
+      "checksum": "6D4A9E5EA75525BFF5CFC44C65030C95",
+      "algorithm": "md5"
+    },
+    {
+      "id": "github_release/github.com/a8m/envsubst/v1.4.3/envsubst-Linux-x86_64",
+      "checksum": "F16BDC6948726C00D3D96908221464E1",
+      "algorithm": "md5"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.72.0/gh_2.72.0_linux_amd64.tar.gz",
       "checksum": "FFD3A9791075CF6119531302B06554E658F38ED12675A7FBFBF4D6B114C77F38",
       "algorithm": "sha256"

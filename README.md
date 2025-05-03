@@ -1,4 +1,4 @@
-My dotfiles with Nix
+My dotfiles
 
 ```bash
 make
