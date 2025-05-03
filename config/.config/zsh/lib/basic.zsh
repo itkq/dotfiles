@@ -28,6 +28,7 @@ export GTAGSLABEL=pygments
 
 # aqua
 export AQUA_GLOBAL_CONFIG=$XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
+export AQUA_POLICY_CONFIG=$XDG_CONFIG_HOME/aquaproj-aqua/aqua-policy.yaml
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 aqua i -l -a
 

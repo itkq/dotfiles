@@ -1,0 +1,17 @@
+packages:
+- type: github_release
+  repo_owner: itkq
+  repo_name: whichpr
+  asset: whichpr_{{.OS}}_{{.Arch}}.tar.gz
+  description: Find the pull request from commit hash.
+  checksum:
+    type: github_release
+    asset: whichpr_{{trimV .Version}}_checksums.txt
+    file_format: regexp
+    algorithm: sha256
+    pattern:
+      checksum: ^(\b[A-Fa-f0-9]{64}\b)
+      file: "^\\b[A-Fa-f0-9]{64}\\b\\s+(\\S+)$"
+  replacements:
+    Darwin: darwin
+    Linux: linux

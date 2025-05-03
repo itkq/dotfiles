@@ -1,5 +1,4 @@
 ---
-# aqua - Declarative CLI Version Manager
 # https://aquaproj.github.io/
 checksum:
   enabled: true
@@ -10,6 +9,9 @@ checksum:
 registries:
 - type: standard
   ref: v4.333.2 # renovate: depName=aquaproj/aqua-registry
+- name: local
+  type: local
+  path: aqua-registry.yaml
 packages:
 - name: hashicorp/terraform@v1.11.4
 - name: rhysd/actionlint@v1.7.7
@@ -23,3 +25,7 @@ packages:
 - name: mikefarah/yq@v4.45.1
 - name: direnv/direnv@v2.36.0
 - name: x-motemen/ghq@v1.8.0
+- name: itkq/whichpr@v0.0.1
+  registry: local
+- name: goreleaser/goreleaser@v2.9.0
+- name: golang/go@go1.24.2

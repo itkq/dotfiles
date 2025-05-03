@@ -61,6 +61,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.9.0/goreleaser_Darwin_all.tar.gz",
+      "checksum": "82953B65C4B64E73B1077827663D97BF8E32592B4FC2CDB55C738BD484260A47",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.9.0/goreleaser_Linux_arm64.tar.gz",
+      "checksum": "574E83F5F0FC97803FF734C9342F8FD446D77E5E7CCAC53DEBF09B4A8DBDED80",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.9.0/goreleaser_Linux_x86_64.tar.gz",
+      "checksum": "A066FCD713684ABED0D750D7559F1A5D794FA2FAA8E8F1AD2EECEC8C373668A7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/itkq/whichpr/v0.0.1/whichpr_darwin_arm64.tar.gz",
+      "checksum": "24A3387D661B820213DAF933BAB361223B87B7057C67B051E8945525D52B4AE1",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
       "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
       "algorithm": "sha256"
@@ -218,6 +238,26 @@
     {
       "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_linux_arm64.zip",
       "checksum": "982A8D0F832664B6D54A0C4089198414B97DCB33E5AED7897C5C0F0FC10E6806",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.24.2.darwin-amd64.tar.gz",
+      "checksum": "238D9C065D09FF6AF229D2E3B8B5E85E688318D69F4006FB85A96E41C216EA83",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.24.2.darwin-arm64.tar.gz",
+      "checksum": "B70F8B3C5B4CCB0AD4FFA5EE91CD38075DF20FDBD953A1DAEDD47F50FBCFF47A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.24.2.linux-amd64.tar.gz",
+      "checksum": "68097BD680839CBC9D464A0EDCE4F7C333975E27A90246890E9F1078C7E702AD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.24.2.linux-arm64.tar.gz",
+      "checksum": "756274EA4B68FA5535EB9FE2559889287D725A8DA63C6AAE4D5F23778C229F4B",
       "algorithm": "sha256"
     },
     {
