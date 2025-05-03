@@ -21,3 +21,4 @@ packages:
 - name: jqlang/jq@jq-1.7.1
 - name: peco/peco@v0.5.11
 - name: mikefarah/yq@v4.45.1
+- name: direnv/direnv@v2.36.0

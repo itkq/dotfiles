@@ -21,6 +21,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/direnv/direnv/v2.36.0/direnv.darwin-amd64",
+      "checksum": "254697562A34BCE83C76345DB9C37B2B01D2DE19FA6F201E0094D81864EB3F1A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.36.0/direnv.darwin-arm64",
+      "checksum": "3647EEC0CD072A19DDA33A279B262AD8AB7AF609B87FF3C55530A0E91AC8CB4F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.36.0/direnv.linux-amd64",
+      "checksum": "604F3DC51F05620D7EA8D8360B3A18D72CCC842A181EDABCA4D7BD75B6784F88",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.36.0/direnv.linux-arm64",
+      "checksum": "C00A71CDB6EBB28E8232E70A7147DFAB40C6F694406729C2D0430BDBA79FCE10",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/fujiwara/iam-policy-finder/v0.0.4/iam-policy-finder_0.0.4_darwin_amd64.tar.gz",
       "checksum": "85DA7AEC24999DCEA16E40CB7421301082A8E05505EA1F09172E1CB87775B018",
       "algorithm": "sha256"

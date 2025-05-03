@@ -24,10 +24,6 @@ setopt no_beep
 # emacs key bind
 bindkey -e
 
-# direnv
-export EDITOR=nvim
-eval "$(direnv hook zsh)"
-
 export GTAGSLABEL=pygments
 
 # aqua
@@ -36,3 +32,8 @@ export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua
 aqua i -l -a
 
 alias ls="ls --color=auto"
+
+# direnv
+export EDITOR=nvim
+eval "$(direnv hook zsh)"
+
