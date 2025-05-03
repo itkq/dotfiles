@@ -10,7 +10,7 @@ uname=$(uname)
 if [[ "$uname" == "Linux" ]]; then
   export PINENTRY_PROGRAM="$HOME/.config/gnupg/pinentry-wsl-ps1.sh"
 elif [[ "$uname" == "Darwin" ]]; then
-  export PINENTRY_PROGRAM="$HOME/.nix-profile/bin/pinentry-mac"
+  export PINENTRY_PROGRAM="/opt/homebrew/bin/pinentry-mac"
 else
   echo "Unsupported uname: $uname" >&2
   exit 1

@@ -4,9 +4,6 @@
     "config:base",
     "github>aquaproj/aqua-renovate-config#2.7.5(config/\\.config/aquaproj-aqua/aqua\\.yaml)"
   ],
-  "nix": {
-    "enabled": true
-  },
   "labels": [
     "dependencies",
     "renovate",
