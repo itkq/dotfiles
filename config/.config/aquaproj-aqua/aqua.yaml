@@ -33,3 +33,4 @@ packages:
 - name: suzuki-shunsuke/ghcp@v1.16.0
 - name: aws/aws-cli@2.27.10
 - name: awslabs/amazon-ecr-credential-helper@v0.9.1
+- name: pnpm/pnpm@v10.10.0

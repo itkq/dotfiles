@@ -181,6 +181,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/pnpm/pnpm/v10.10.0/pnpm-linux-arm64",
+      "checksum": "132FF3F04B29DD395A101E792369E05980B45A71CA8322A4D0851B3299534E4B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.10.0/pnpm-linux-x64",
+      "checksum": "F238CA52DBFB6E045641FA4A61A05762DAF3043906CD0FFE911261C3CC64730E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.10.0/pnpm-macos-arm64",
+      "checksum": "01F10B192C4359BEFB299AA7335DC4DCD3F35D8D763AEC60DE08AE3B858B4FCF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.10.0/pnpm-macos-x64",
+      "checksum": "CB470F12B7E7D4C4F7948D453513905D44081AEFE4D6DD30F365C68A553AF631",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.8/actionlint_1.7.8_darwin_amd64.tar.gz",
       "checksum": "16B85CAF792B34BCC40F7437736C4347680DA0A1B034353A85012DEBBD71A461",
       "algorithm": "sha256"
