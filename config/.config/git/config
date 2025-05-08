@@ -10,7 +10,7 @@
   ui = true
 [core]
   excludesfile = ~/.gitignore
-  editor = nvim
+  editor = /usr/bin/vim
   filemode = true
   pager = less -r
 [push]

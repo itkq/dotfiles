@@ -31,3 +31,4 @@ packages:
 - name: golang/go@go1.25.3
 - name: a8m/envsubst@v1.4.3
 - name: suzuki-shunsuke/ghcp@v1.16.0
+- name: aws/aws-cli@2.27.10

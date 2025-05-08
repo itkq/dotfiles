@@ -281,6 +281,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/awscli.amazonaws.com/AWSCLIV2-2.27.10.pkg",
+      "checksum": "16DCEDEE89EC5BCB0D87570FE2B5445636B7565C3337563D58ED48D5B27E7B33",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-aarch64-2.27.10.zip",
+      "checksum": "B29FF0000955D09EED527FB44580F13C8A2ABA674DD317D6CC97EFCB9FC5B0D7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-x86_64-2.27.10.zip",
+      "checksum": "467F69FED8345AE308E58435C09B51EE14F45BE86423A72228C2BBA936FD1572",
+      "algorithm": "sha256"
+    },
+    {
       "id": "http/golang.org/dl/go1.25.3.darwin-amd64.tar.gz",
       "checksum": "1641050B422B80DFD6299F8AA7EB8798D1CD23EAC7E79F445728926E881B7BCD",
       "algorithm": "sha256"
