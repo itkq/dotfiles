@@ -29,7 +29,7 @@ jobs:
       contents: read
     with:
       working_directory: config/.config/aquaproj-aqua
-      aqua_version: v2.53.3
+      aqua_version: v2.53.4
       prune: true
     secrets:
       gh_app_id: ${{ vars.DOTFILES_UPDATER_APP_ID }}
