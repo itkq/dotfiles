@@ -201,23 +201,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.4/ghatm_darwin_amd64.tar.gz",
-      "checksum": "53B50CFFEFEB3439B47889EE629539A04D67F5D9E1DD39A25A1C95F2C5F90C03",
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.6/ghatm_darwin_amd64.tar.gz",
+      "checksum": "B01568214D5D5E7AB5ABD34237CA17989E84D05F27FB3E22683987B3A58D5B4B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.4/ghatm_darwin_arm64.tar.gz",
-      "checksum": "1D1D37B4B8362B83CE5D15D2EEEBFDA175474525C2913D86B2AC6249926EF8EA",
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.6/ghatm_darwin_arm64.tar.gz",
+      "checksum": "1449B5CD5C639D9E8267787A57ACAAB9A3CEF0844D938CDD74430B6B0CF26CF4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.4/ghatm_linux_amd64.tar.gz",
-      "checksum": "8724D5946F5F62DEFA01D17B5651629EB9FF47963F0D2114DD2DA30C0BAD7205",
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.6/ghatm_linux_amd64.tar.gz",
+      "checksum": "579070B81B0E2EE3EF4579CABC8F79C7A917610C2B4FDBB0C31EE8B7D5887179",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.4/ghatm_linux_arm64.tar.gz",
-      "checksum": "3FC349CC468371CCC9BB8D032707BB8A1989ED89BCF9F87322C1A94279C9FB5F",
+      "id": "github_release/github.com/suzuki-shunsuke/ghatm/v0.3.6/ghatm_linux_arm64.tar.gz",
+      "checksum": "3CEFAC568BBA2F87AAF307FBB0E2F9C547DCA974CE217FD8BDF8B7892217BEC9",
       "algorithm": "sha256"
     },
     {
