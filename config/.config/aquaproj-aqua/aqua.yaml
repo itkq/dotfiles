@@ -28,6 +28,6 @@ packages:
 - name: itkq/whichpr@v0.0.1
   registry: local
 - name: goreleaser/goreleaser@v2.11.2
-- name: golang/go@go1.25.0
+- name: golang/go@go1.25.1
 - name: a8m/envsubst@v1.4.3
 - name: suzuki-shunsuke/ghcp@v1.16.0
