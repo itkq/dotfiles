@@ -261,6 +261,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghtkn/v0.2.2/ghtkn_darwin_amd64.tar.gz",
+      "checksum": "25D0BB692DA0354338FA7CF136382EBC453C92CA9F60606AB85502BE55DC1BA1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghtkn/v0.2.2/ghtkn_darwin_arm64.tar.gz",
+      "checksum": "7F8B535522F4BEECA9E94A1C670568B8F0DE5C62286615540A857E5F5CDB0275",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghtkn/v0.2.2/ghtkn_linux_amd64.tar.gz",
+      "checksum": "2C24F5BEAB7F52D8C2D965942C4F170E9D0EDA86C0041887BBC9D631ED85B1FF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghtkn/v0.2.2/ghtkn_linux_arm64.tar.gz",
+      "checksum": "D361CA358EB40B7D6C85798DEEFF83EE2B6C6176EC204267E30AFC8690C77091",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.4.2/pinact_darwin_amd64.tar.gz",
       "checksum": "5E2A94BC37BDAEF84F409B0B811F4E56EBFFFAE227624B86D58A172085AB73AA",
       "algorithm": "sha256"
@@ -301,8 +321,23 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.9.1/darwin-amd64/docker-credential-ecr-login",
+      "checksum": "51E9BD69D05C4394CADD656BDEDBB35D1B5942FA34419D9D1E948A0992BD0F18",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.9.1/darwin-arm64/docker-credential-ecr-login",
+      "checksum": "1674B481D755AF008DC9A17125B09CE7BB648197766A59866131819788B23F18",
+      "algorithm": "sha256"
+    },
+    {
       "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.9.1/linux-amd64/docker-credential-ecr-login",
       "checksum": "C0054F2635B2F01B00F7BF6F88023FFE7FDED15C533A85A493037607135EEBAC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.9.1/linux-arm64/docker-credential-ecr-login",
+      "checksum": "A10012ACFE5E28D7AED18F06BEC4AA2A13FB3D9765898C36EF31136B24BD56E9",
       "algorithm": "sha256"
     },
     {
@@ -361,11 +396,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.364.0/registry.yaml",
-      "checksum": "799600A73C2BFD11303016AF39AC934A291FB3E5CAE59836312B0CA66B839ADE7FF2E7A622B07188BA81B0DEAD49CF17816AC9ED5F9ACA4EC9A0597EB2A96807",
-      "algorithm": "sha512"
-    },
-    {
       "id": "http/s3.amazonaws.com/session-manager-downloads/plugin/1.2.707.0/mac/sessionmanager-bundle.zip",
       "checksum": "C285834745F100702E9369C5B17766382A91595133EC8F4198E1E5A4B5FCE977",
       "algorithm": "sha256"
@@ -373,6 +403,11 @@
     {
       "id": "http/s3.amazonaws.com/session-manager-downloads/plugin/1.2.707.0/mac_arm64/sessionmanager-bundle.zip",
       "checksum": "ED8FDDD305DF8122ED462ADC38458FC4E1D75C224C4A65A57FAFC4638255B71F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.428.0/registry.yaml",
+      "checksum": "A2998B92CE6CCB93AE1B1B44858377AFC54F852581CD4D08E68E65276D2E9D06",
       "algorithm": "sha256"
     }
   ]

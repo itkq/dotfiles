@@ -35,3 +35,4 @@ packages:
 - name: awslabs/amazon-ecr-credential-helper@v0.9.1
 - name: pnpm/pnpm@v10.10.0
 - name: aws/session-manager-plugin@1.2.707.0
+- name: suzuki-shunsuke/ghtkn@v0.2.2
