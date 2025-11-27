@@ -15,7 +15,7 @@ registries:
 packages:
 - name: hashicorp/terraform@v1.14.0
 - name: rhysd/actionlint@v1.7.9
-- name: suzuki-shunsuke/pinact@v3.4.4
+- name: suzuki-shunsuke/pinact@v3.4.5
 - name: fujiwara/iam-policy-finder@v0.0.4
 - name: koalaman/shellcheck@v0.11.0
 - name: suzuki-shunsuke/ghatm@v0.3.7
