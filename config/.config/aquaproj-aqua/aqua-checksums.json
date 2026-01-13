@@ -366,6 +366,46 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/awscli.amazonaws.com/AWSCLIV2-2.32.33.pkg",
+      "checksum": "33768BC19814B37E50A5AAD2AA428548839C4E484DDD6182FE1C8F6F521C9DBB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-aarch64-2.32.33.zip",
+      "checksum": "6D7230EEF275A56CD244D08E1B404EB707F34EDCA283B0547D3ED3A52D9F2478",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-x86_64-2.32.33.zip",
+      "checksum": "7EFF778E8BA6E1DB3D4F75DE045606E17A3E65D8C27391711D4C9A251CE3806B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/linux/static/stable/aarch64/docker-29.1.4.tgz",
+      "checksum": "1D7E4428F455F3BF647B8ACE12BB2AD65FA23E9F97E2051B38A4ACDF408BB16F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/linux/static/stable/x86_64/docker-29.1.4.tgz",
+      "checksum": "45ED5BAED5171F0169B48266D9015107CEE1A8639868A2481EC17A9B0C961C2E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/mac/static/stable/aarch64/docker-29.1.4.tgz",
+      "checksum": "1936CC1FCA180E996D273EF252932C00FD672691B9D3E13F82A9EB8E9250F302",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/mac/static/stable/x86_64/docker-29.1.4.tgz",
+      "checksum": "727720C5C75644E64151D9156E49B31878C400B22379943D6FB85BEE63B1ACFB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.5.darwin-amd64.tar.gz",
+      "checksum": "B69D51BCE599E5381A94CE15263AE644EC84667A5CE23D58DC2E63E2C12A9F56",
+      "algorithm": "sha256"
+    },
+    {
       "id": "http/golang.org/dl/go1.25.6.darwin-amd64.tar.gz",
       "checksum": "E2B5B237F5C262931B8E280AC4B8363F156E19BFAD5270C099998932819670B7",
       "algorithm": "sha256"

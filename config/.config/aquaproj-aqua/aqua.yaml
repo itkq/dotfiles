@@ -35,3 +35,5 @@ packages:
 - name: neovim/neovim@v0.11.5
 - name: abiosoft/colima@v0.9.1
 - name: lima-vm/lima@v2.0.3
+- name: docker/cli@v29.1.4
+- name: aws/aws-cli@2.32.33
