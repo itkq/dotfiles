@@ -32,3 +32,4 @@ packages:
 - name: a8m/envsubst@v1.4.3
 - name: suzuki-shunsuke/ghcp@v1.16.0
 - name: sharkdp/bat@v0.26.1
+- name: neovim/neovim@v0.11.5
