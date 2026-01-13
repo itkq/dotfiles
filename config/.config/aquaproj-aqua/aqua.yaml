@@ -34,3 +34,4 @@ packages:
 - name: sharkdp/bat@v0.26.1
 - name: neovim/neovim@v0.11.5
 - name: abiosoft/colima@v0.9.1
+- name: lima-vm/lima@v2.0.3

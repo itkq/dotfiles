@@ -166,6 +166,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/lima-vm/lima/v2.0.3/lima-2.0.3-Darwin-arm64.tar.gz",
+      "checksum": "22AEE997DF59E4FD448041B2D1214E48BD8EAF705D2D48A4307D65C1B179DC97",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lima-vm/lima/v2.0.3/lima-2.0.3-Darwin-x86_64.tar.gz",
+      "checksum": "0806BCB83A08411E9D878B43B2C4203F1556FE14F9F8BA1E5F0D5D9A3C2C0BD8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lima-vm/lima/v2.0.3/lima-2.0.3-Linux-aarch64.tar.gz",
+      "checksum": "D0F9C30B82FDBD06B5C951B76BF3378B68CC658AEBFE243F777949E131B6EA28",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lima-vm/lima/v2.0.3/lima-2.0.3-Linux-x86_64.tar.gz",
+      "checksum": "6838A926D85ED2DDCFD636BEFB476256A96196516A3B7F36D2AF66CDE9188D66",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mikefarah/yq/v4.45.3/yq_darwin_amd64",
       "checksum": "EE0E3F6C1875B23BDB45E24F32977ECE527D90FAEFDD6E31AE8275AE6A32F752",
       "algorithm": "sha256"
