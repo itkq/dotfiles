@@ -21,6 +21,31 @@
       "algorithm": "md5"
     },
     {
+      "id": "github_release/github.com/abiosoft/colima/v0.9.1/colima-Darwin-arm64",
+      "checksum": "A9E8C266D3EE85FC354EE5DE4044FEE99253E1A4E98B64E4CAB79CDB3DAD3539",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/abiosoft/colima/v0.9.1/colima-Darwin-x86_64",
+      "checksum": "D90EFD431713D4DB57A2083FBF4154C57C63D7E5A2292170C8EAA89FB2E3EFED",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/abiosoft/colima/v0.9.1/colima-Linux-aarch64",
+      "checksum": "165E0BD41E4F0300E114DE65C4A5D135C34D780E2F42CDD1D16EF301AEF92940",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/abiosoft/colima/v0.9.1/colima-Linux-x86_64",
+      "checksum": "81D986638D530DDC9372F6AA2459065B6C407D880F2866A3CB271A3C51AC5F60",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.83.2/gh_2.83.2_linux_amd64.tar.gz",
+      "checksum": "CA6E7641214FBD0E21429CEC4B64A7BA626FD946D8F9D6D191467545B092015E",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.85.0/gh_2.85.0_linux_amd64.tar.gz",
       "checksum": "5DCC4E282B9C22C0D31C217805976448C966CFC56C20157C78385A8A62C93CF0",
       "algorithm": "sha256"
