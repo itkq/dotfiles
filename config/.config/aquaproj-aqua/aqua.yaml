@@ -19,7 +19,7 @@ packages:
 - name: fujiwara/iam-policy-finder@v0.0.4
 - name: koalaman/shellcheck@v0.11.0
 - name: suzuki-shunsuke/ghatm@v1.0.0
-- name: cli/cli@v2.83.2
+- name: cli/cli@v2.85.0
 - name: jqlang/jq@jq-1.8.1
 - name: peco/peco@v0.5.11
 - name: mikefarah/yq@v4.45.3
