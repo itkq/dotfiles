@@ -37,3 +37,4 @@ packages:
 - name: lima-vm/lima@v2.0.3
 - name: docker/cli@v29.1.4
 - name: aws/aws-cli@2.32.33
+- name: awslabs/amazon-ecr-credential-helper@v0.11.0
