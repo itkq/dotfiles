@@ -38,3 +38,4 @@ alias ls="ls --color=auto"
 export EDITOR=nvim
 eval "$(direnv hook zsh)"
 
+eval "$(git wt --init zsh)"
