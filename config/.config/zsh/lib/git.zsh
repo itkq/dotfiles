@@ -128,8 +128,17 @@ function gc() {
 }
 
 function gha_browse() {
-  repo=$(git rev-parse --show-toplevel | awk -F'/' -v OFS='/' '{print $(NF-1), $NF}')
-  find $(git rev-parse --show-toplevel)/.github/workflows -type f | xargs -n1 basename | grep -vE '^_' | sort | peco | xargs -I%% open "https://github.com/$repo/actions/workflows/%%"
+  local repo_root=$(git rev-parse --show-toplevel)
+
+  local origin_url=$(git remote get-url origin)
+  local repo=$(echo "$origin_url" | sed -E 's|^.*[:/]([^/]+/[^/]+)(\.git)?$|\1|' | sed 's/\.git$//')
+
+  find "$repo_root/.github/workflows" -type f \( -name "*.yml" -o -name "*.yaml" \) |
+    sed 's|.*/||' |
+    grep -vE '^_' |
+    sort |
+    peco |
+    xargs -I%% open "https://github.com/$repo/actions/workflows/%%"
 }
 
 function current-repo() {
