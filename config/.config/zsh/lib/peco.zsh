@@ -17,7 +17,18 @@ bindkey '^r' peco-select-history
 
 # integrate all source code with ghq
 function peco-src() {
-	local selected_dir=$(ghq list --vcs git | peco --query "$LBUFFER" --prompt "[ghq list]")
+	local cache_file="${HOME}/.cache/ghq-list-cache"
+	local cache_time=3600  # 1時間
+
+	# キャッシュディレクトリ作成
+	mkdir -p "$(dirname "$cache_file")"
+
+	# キャッシュが古い、または存在しない場合は更新
+	if [[ ! -f "$cache_file" ]] || [[ $(($(date +%s) - $(stat -f %m "$cache_file" 2>/dev/null || echo 0))) -gt $cache_time ]]; then
+		ghq list > "$cache_file"
+	fi
+
+	local selected_dir=$(cat "$cache_file" | peco --query "$LBUFFER" --prompt "[ghq list]")
 	if [ -n "$selected_dir" ]; then
 		full_dir="${GOPATH}/src/${selected_dir}"
 
