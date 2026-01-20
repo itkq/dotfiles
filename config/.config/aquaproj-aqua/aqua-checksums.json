@@ -41,11 +41,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.83.2/gh_2.83.2_linux_amd64.tar.gz",
-      "checksum": "CA6E7641214FBD0E21429CEC4B64A7BA626FD946D8F9D6D191467545B092015E",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/cli/cli/v2.85.0/gh_2.85.0_linux_amd64.tar.gz",
       "checksum": "5DCC4E282B9C22C0D31C217805976448C966CFC56C20157C78385A8A62C93CF0",
       "algorithm": "sha256"
@@ -406,18 +401,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/awscli.amazonaws.com/AWSCLIV2-2.32.33.pkg",
-      "checksum": "33768BC19814B37E50A5AAD2AA428548839C4E484DDD6182FE1C8F6F521C9DBB",
+      "id": "http/awscli.amazonaws.com/AWSCLIV2-2.33.2.pkg",
+      "checksum": "DB991B34CF6D064CCA5ECF9B28B9991948FC0E40F4BF7863287020F400932CDF",
       "algorithm": "sha256"
     },
     {
-      "id": "http/awscli.amazonaws.com/awscli-exe-linux-aarch64-2.32.33.zip",
-      "checksum": "6D7230EEF275A56CD244D08E1B404EB707F34EDCA283B0547D3ED3A52D9F2478",
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-aarch64-2.33.2.zip",
+      "checksum": "F25FF25EBF59AB2FB9B0C2DC15A550F1BA763103D807984EBA680DE1CEDF1000",
       "algorithm": "sha256"
     },
     {
-      "id": "http/awscli.amazonaws.com/awscli-exe-linux-x86_64-2.32.33.zip",
-      "checksum": "7EFF778E8BA6E1DB3D4F75DE045606E17A3E65D8C27391711D4C9A251CE3806B",
+      "id": "http/awscli.amazonaws.com/awscli-exe-linux-x86_64-2.33.2.zip",
+      "checksum": "03A62592085C43974BBB795C74DF0DA0345041CBCEB97A22B29B04E5B5176A10",
       "algorithm": "sha256"
     },
     {
@@ -438,11 +433,6 @@
     {
       "id": "http/download.docker.com/mac/static/stable/x86_64/docker-29.1.4.tgz",
       "checksum": "727720C5C75644E64151D9156E49B31878C400B22379943D6FB85BEE63B1ACFB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/golang.org/dl/go1.25.5.darwin-amd64.tar.gz",
-      "checksum": "B69D51BCE599E5381A94CE15263AE644EC84667A5CE23D58DC2E63E2C12A9F56",
       "algorithm": "sha256"
     },
     {
