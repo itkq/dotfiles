@@ -38,4 +38,4 @@ packages:
 - name: docker/cli@v29.1.4
 - name: aws/aws-cli@2.33.9
 - name: awslabs/amazon-ecr-credential-helper@v0.11.0
-- name: oven-sh/bun@bun-v1.3.7
+- name: oven-sh/bun@bun-v1.3.8
