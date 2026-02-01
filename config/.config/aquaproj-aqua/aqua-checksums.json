@@ -361,24 +361,24 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_darwin_amd64.zip",
-      "checksum": "742A64C85B7C01A1399AE286E886CFFC4649EE38891FB01CD32F31394610EA80",
-      "algorithm": "sha256"
+      "id": "github_release/github.com/x-motemen/ghq/v1.8.1/ghq_darwin_amd64.zip",
+      "checksum": "FA984CB1D7CAC14F04AFC2D2FED754D14503FA21",
+      "algorithm": "sha1"
     },
     {
-      "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_darwin_arm64.zip",
-      "checksum": "0399A4DCDDEEB9E76F7F9EEB8015F91A6F093B04C14D3EB87EB563E5D94F9B0A",
-      "algorithm": "sha256"
+      "id": "github_release/github.com/x-motemen/ghq/v1.8.1/ghq_darwin_arm64.zip",
+      "checksum": "D3620447336CABA325453989EC6DA82E11F43E89",
+      "algorithm": "sha1"
     },
     {
-      "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_linux_amd64.zip",
-      "checksum": "AD0EC7B2F52312DCA85F35B5C9E88A77447C2C71BABBD9DFEB569AB369B8E55F",
-      "algorithm": "sha256"
+      "id": "github_release/github.com/x-motemen/ghq/v1.8.1/ghq_linux_amd64.zip",
+      "checksum": "78E80E312BB9DB433E2C49AAB7B0C2512D4D0C14",
+      "algorithm": "sha1"
     },
     {
-      "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_linux_arm64.zip",
-      "checksum": "982A8D0F832664B6D54A0C4089198414B97DCB33E5AED7897C5C0F0FC10E6806",
-      "algorithm": "sha256"
+      "id": "github_release/github.com/x-motemen/ghq/v1.8.1/ghq_linux_arm64.zip",
+      "checksum": "D28F7A76F1FED98B2050E2EFAE3BCE5A1F56ECB3",
+      "algorithm": "sha1"
     },
     {
       "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.11.0/darwin-amd64/docker-credential-ecr-login",
