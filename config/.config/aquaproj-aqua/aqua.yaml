@@ -24,7 +24,7 @@ packages:
 - name: peco/peco@v0.5.11
 - name: mikefarah/yq@v4.45.3
 - name: direnv/direnv@v2.37.1
-- name: x-motemen/ghq@v1.8.0
+- name: x-motemen/ghq@v1.8.1
 - name: itkq/whichpr@v0.0.1
   registry: local
 - name: goreleaser/goreleaser@v2.13.3
