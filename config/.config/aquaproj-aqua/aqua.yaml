@@ -33,7 +33,7 @@ packages:
 - name: suzuki-shunsuke/ghcp@v1.16.0
 - name: sharkdp/bat@v0.26.1
 - name: neovim/neovim@v0.11.6
-- name: abiosoft/colima@v0.9.1
+- name: abiosoft/colima@v0.10.0
 - name: lima-vm/lima@v2.0.3
 - name: docker/cli@v29.1.4
 - name: aws/aws-cli@2.33.18
