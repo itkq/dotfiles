@@ -36,6 +36,6 @@ packages:
 - name: abiosoft/colima@v0.10.0
 - name: lima-vm/lima@v2.0.3
 - name: docker/cli@v29.1.4
-- name: aws/aws-cli@2.33.21
+- name: aws/aws-cli@2.33.22
 - name: awslabs/amazon-ecr-credential-helper@v0.11.0
 - name: oven-sh/bun@bun-v1.3.9
