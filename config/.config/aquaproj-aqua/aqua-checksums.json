@@ -381,23 +381,8 @@
       "algorithm": "sha1"
     },
     {
-      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.11.0/darwin-amd64/docker-credential-ecr-login",
-      "checksum": "FBAC9DCE3C5FD64D42782FAC629ADD9867E4FAAAF879BE91EF64BAFE9828FB35",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.11.0/darwin-arm64/docker-credential-ecr-login",
-      "checksum": "BB39F61ADA69D9F782EC9F6B34CB77B33E567700F41B79B19132B6FA26CCBE6A",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.11.0/linux-amd64/docker-credential-ecr-login",
-      "checksum": "D6B23F3B6DC2F6AF875902844AF3BBB0D6AC4980E4B3815640C9B2E2E34267AE",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.11.0/linux-arm64/docker-credential-ecr-login",
-      "checksum": "B1BA09040F102606B49F7F352EB3D8908AC38186B8FE5DEC3AD17ED7D6F6B86D",
+      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.12.0/linux-amd64/docker-credential-ecr-login",
+      "checksum": "A22AB6D59DBAC777B8FB31984709461DA00A4C778B6AE14C8D3729E8D5DED1A6",
       "algorithm": "sha256"
     },
     {
