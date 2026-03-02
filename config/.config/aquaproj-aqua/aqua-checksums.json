@@ -241,23 +241,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/peco/peco/v0.5.11/peco_darwin_amd64.zip",
-      "checksum": "C0A2C2F510DE5711AB23B0E07D3211E54CA4B4E6BFF6EAB7020037D9AC0E067D",
+      "id": "github_release/github.com/peco/peco/v0.6.0/peco_0.6.0_darwin_amd64.zip",
+      "checksum": "89DB4861044958F0EBE349B5009137FA8323390B6FF5C19F2CCBB578A6B03E54",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/peco/peco/v0.5.11/peco_darwin_arm64.zip",
-      "checksum": "D5317EF7964FBD24C877CB257C73B06D2BB91EFEC2C0C206082B83CBA45C9EBC",
+      "id": "github_release/github.com/peco/peco/v0.6.0/peco_0.6.0_darwin_arm64.zip",
+      "checksum": "778A4ED7B254294451B5EC1695097E72CE0C70B2E753EE32BFDE2158A72C4ED7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/peco/peco/v0.5.11/peco_linux_amd64.tar.gz",
-      "checksum": "EC3C32A4950A6DBCA7AB79AE2EDFD9E28721AB3A0AEAB938A2147CCF77FD3BE2",
+      "id": "github_release/github.com/peco/peco/v0.6.0/peco_0.6.0_linux_amd64.tar.gz",
+      "checksum": "93D4418AB1261EB723A1F614C2E652C9E912885CFF7D969F913C0686459C62E8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/peco/peco/v0.5.11/peco_linux_arm64.tar.gz",
-      "checksum": "69384496EF5A1F6566303CAF30F7BE6334F39DE1F42F9E0EE2BF327F8123ECF6",
+      "id": "github_release/github.com/peco/peco/v0.6.0/peco_0.6.0_linux_arm64.tar.gz",
+      "checksum": "035184A97026F79DBC6571A3BF5F74586C523E4485C034322E93820E3F135494",
       "algorithm": "sha256"
     },
     {
