@@ -21,7 +21,7 @@ packages:
 - name: suzuki-shunsuke/ghatm@v1.0.0
 - name: cli/cli@v2.87.3
 - name: jqlang/jq@jq-1.8.1
-- name: peco/peco@v0.5.11
+- name: peco/peco@v0.6.0
 - name: mikefarah/yq@v4.45.3
 - name: direnv/direnv@v2.37.1
 - name: x-motemen/ghq@v1.9.4
