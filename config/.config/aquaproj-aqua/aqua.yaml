@@ -34,7 +34,7 @@ packages:
 - name: sharkdp/bat@v0.26.1
 - name: neovim/neovim@v0.11.6
 - name: abiosoft/colima@v0.10.1
-- name: lima-vm/lima@v2.0.3
+- name: lima-vm/lima@v2.1.0
 - name: docker/cli@v29.1.4
 - name: aws/aws-cli@2.33.31
 - name: awslabs/amazon-ecr-credential-helper@v0.12.0
