@@ -161,23 +161,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lima-vm/lima/v2.1.0/lima-2.1.0-Darwin-arm64.tar.gz",
-      "checksum": "1DA852BCE2F98B8310FB53E5047E08FF798880DDF9AE4B3161D4DE4E73777B34",
+      "id": "github_release/github.com/lima-vm/lima/v2.1.1/lima-2.1.1-Darwin-arm64.tar.gz",
+      "checksum": "B6B0E6701189CD8C4E549CC39E6D054DC681487798B9B774AD2CBD30C08B2BD8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lima-vm/lima/v2.1.0/lima-2.1.0-Darwin-x86_64.tar.gz",
-      "checksum": "529D6DAD275BDED4BD1FB17C6DF4D22F11917712AAB1693F5BC43286B5E78824",
+      "id": "github_release/github.com/lima-vm/lima/v2.1.1/lima-2.1.1-Darwin-x86_64.tar.gz",
+      "checksum": "2DC5B10AA3A4F26D08C1F3FE83E37E01F85A7D9DB0D1D5CB6985B18AF96AB07D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lima-vm/lima/v2.1.0/lima-2.1.0-Linux-aarch64.tar.gz",
-      "checksum": "8B806C81F38AD7EA8104F196B414E243726CAD1DFA6AA52843608D55DF8C5290",
+      "id": "github_release/github.com/lima-vm/lima/v2.1.1/lima-2.1.1-Linux-aarch64.tar.gz",
+      "checksum": "1011D18701697E2A559C044932309728FD6488A5380673C489556784924BF3CA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lima-vm/lima/v2.1.0/lima-2.1.0-Linux-x86_64.tar.gz",
-      "checksum": "9E52C605790649ACEAC1F894EB2BB7CDB45897257FAAFB54FF30CE6A576BEBFA",
+      "id": "github_release/github.com/lima-vm/lima/v2.1.1/lima-2.1.1-Linux-x86_64.tar.gz",
+      "checksum": "0F89235DE8C3676D988D863CFEF37AC7CF4B8A14BA05D5D678A99DFEA1DB2D3C",
       "algorithm": "sha256"
     },
     {
