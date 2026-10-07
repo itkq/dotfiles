@@ -61,23 +61,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/direnv/direnv/v2.37.1/direnv.darwin-amd64",
-      "checksum": "24FB9CE48B563D7E9FBDD3A4E3E836941654A31CE3E67EBA9EAAFC3DCD8AE73B",
+      "id": "github_release/github.com/direnv/direnv/v2.38.1/direnv.darwin-amd64",
+      "checksum": "A0501604814F2DCC19A7588E17701C546327880FB7466F779033051BE5A00586",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/direnv/direnv/v2.37.1/direnv.darwin-arm64",
-      "checksum": "4F569F3A36732BFD8B8FEA7BFCC6AD87A59745C109022164D0CA4832451D5369",
+      "id": "github_release/github.com/direnv/direnv/v2.38.1/direnv.darwin-arm64",
+      "checksum": "E7819F1B8EF73CC2D96E7B938B0C56AEFF052D3872DEAE6DAAD0B16BD700386C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/direnv/direnv/v2.37.1/direnv.linux-amd64",
-      "checksum": "1F1B93DD6F38523FDE26DFAC96151EF9D31A374E3005CD3345FB93555AE0C9B5",
+      "id": "github_release/github.com/direnv/direnv/v2.38.1/direnv.linux-amd64",
+      "checksum": "A19470B6D93AFEB226B89B1DABF95A5E559533905122BE235ED35408E9983B3C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/direnv/direnv/v2.37.1/direnv.linux-arm64",
-      "checksum": "2A9CEF8D73521D6A3EC3F2871C4B747B8C4CC038628C1B57A7EFA42B393A2D82",
+      "id": "github_release/github.com/direnv/direnv/v2.38.1/direnv.linux-arm64",
+      "checksum": "A5DEEDD4165C94E629A4F3FAF74FC0425D3C34A2FCEE438A95D628A5F41F5BD8",
       "algorithm": "sha256"
     },
     {
