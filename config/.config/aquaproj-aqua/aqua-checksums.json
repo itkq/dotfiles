@@ -381,8 +381,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.12.0/linux-amd64/docker-credential-ecr-login",
-      "checksum": "A22AB6D59DBAC777B8FB31984709461DA00A4C778B6AE14C8D3729E8D5DED1A6",
+      "id": "http/amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/0.13.0/linux-amd64/docker-credential-ecr-login",
+      "checksum": "4278F07192FE63B5432DEC9D0E3326B2BC11296C8954B7AFEC1EB1A9B198E015",
       "algorithm": "sha256"
     },
     {
